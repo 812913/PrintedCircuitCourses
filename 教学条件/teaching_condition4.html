@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="initial-scale=1.0,width=device-width">
+    <link href="../common_use.css" rel="stylesheet" type="text/css">
+    <link href="../common_use1.css" rel="stylesheet" type="text/css">
+    <title>教学条件—印刷电路精品课程</title>
+    <style>
+        .main
+        {  float: left;
+            width: 75.3%;
+            margin-left:2.1%;
+            overflow: hidden;
+        }
+        .main p{
+            padding:2px 0;
+        }
+        .main p span{
+            color: #339999;
+        }
+       .title{
+           font-size: 18px;
+           display: inline-block;
+           margin:5px 0;
+       }
+        .main ul {
+            list-style: none;
+            margin-left: 32px;
+        }
+        .main ul li{
+           padding: 5px;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function() {
+            var undis=document.getElementsByClassName("undis");
+            for( i=0;i<=9;i++)
+            {
+                undis[i].style.display="none";
+            }
+        }
+    </script>
+    <script src="../zinav.js" type="text/javascript"></script>
+</head>
+<body>
+<!--通用-->
+<div class="fixed">
+    <p><a href="#nav">&Lambda;</a></p>
+</div>
+<div class="header">
+    <div class="top">
+        <div class="left"><span>电子科技大学印刷电路原理与工艺精品课程 </span></div>
+        <div class="right">
+            <ul>
+                <li id="date">
+                    <script src="../DisplayDate.js"></script>
+                </li>
+                <li>管理入口&nbsp;&nbsp;&nbsp;|</li><!--关于管理入口-->
+                <li><a href="#" onClick="try{window.external.addFavorite(this.href,this.title);}catch(e){alert('加入收藏失败，请使用Ctrl+D进行添加');} return false;" title="电子科大精品课程" rel="sidebar">收藏本页&nbsp;&nbsp;&nbsp;|</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="bg">
+    <div class="logo">
+        <img id="logo1" src="../img/logo1.png"/>
+        <div class="span_left">
+            <span id="jcourse">精品课程建设</span><br/>
+            <span id="college">电子科技大学微固学院</span>
+        </div>
+        <div class="span_right">
+            <span id="print">印刷电路原理<br/></span>
+            <span id="and">和工艺</span>
+        </div>
+    </div>
+    <div class="nav_img">
+        <div class="nav" id="nav">
+            <ul>
+                <li><a  id="nav1"  href="../index.html" target="_blank"  onmouseover="doClick(this)">首页</a></li>
+                <li><a id="nav2"   href="../课程简介/course_introduce.html"  onMouseOver="doClick(this)">课程简介</a></li>
+                <li><a id="nav3"  href="../教学队伍/teaching_team.html" target="_blank" onMouseOver="doClick(this)">教学队伍</a></li>
+                <li><a id="nav4"  href="../教学内容/teaching_content.html" target="_blank" onMouseOver="doClick(this)">教学内容</a></li>
+                <li ><a id="nav5" href="#" target="_blank" onMouseOver="doClick(this)">申报书</a></li>
+                <li ><a id="nav6"  href="../教学手段/teaching_measure.html" target="_blank" onMouseOver="doClick(this)">教学手段</a></li>
+                <li><a id="nav7" style="color: maroon;" href="../教学条件/teaching_condition.html" target="_blank" onMouseOver="doClick(this)">教学条件</a></li>
+                <li ><a id="nav8" href="../教学效果/teaching_effect.html"  target="_blank" onMouseOver="doClick(this)">教学效果</a></li>
+                <li ><a id="nav9" href="../教学实践/teaching_practice.html" target="_blank" onMouseOver="doClick(this)">教学实践</a></li>
+                <li ><a id="nav10" href="../网络课堂/teaching_online.html"  target="_blank" onMouseOver="doClick(this)">网络课堂</a>
+            </ul>
+        </div>
+        <!--********** sub子菜单列表********************************-->
+        <div id="zinav">
+            <!--********子菜单一  sub1 **********************-->
+            <div id="bg_nav">
+                <ul class="undis" id="sub1">
+                    <li>最新公告:
+                        <span >印制电路原理和工艺精品课程网站新版已经修改完成，如有不足的地方，恳请各位专家提出您宝贵的意见!</span>
+                    </li>
+                </ul>
+
+                <!--********子菜单二 sub2 **********************-->
+                <ul class="undis" id="sub2">
+                    <li><a   href="../课程简介/course_introduce.html">课程概述</a></li>
+                    <li><a   href="../课程简介/course_introduce_history.html">历史沿革</a></li>
+                    <li><a href="../课程简介/course_introduce_feature.html">课程特色</a></li>
+                    <li><a href="../课程简介/course_introduce_level.html">同期水平</a></li>
+                    <li><a  href="../课程简介/course_introduce_construction.html">建设规划</a></li>
+                    <li><a href="../课程简介/course_introduce_measure.html">政策措施</a></li>
+                </ul>
+
+                <!--********子菜单三  sub3 **********************-->
+                <ul class="undis" id="sub3">
+                    <li><a  href="../教学队伍/teaching_team.html">教学队伍概述</a></li>
+                    <li><a   href="../教学队伍/teaching_team_structure.html">教学队伍结构与素质</a></li>
+                    <li><a  href="../教学队伍/teaching_team_reform.html">教学改革与研究</a></li>
+                    <li><a  href="../教学队伍/teaching_team_principal.html">课程负责人</a></li>
+                    <li><a  href="../教学队伍/teaching_team_baseinformation.html">主讲教师介绍</a></li>
+                </ul>
+
+                <!--子菜单四  sub4 **********************-->
+                <ul class="undis" id="sub4">
+                    <li><a  href="../教学内容/teaching_content.html">教学内容概述</a></li>
+                    <li><a href="../教学内容/teaching_content_outline.html">理论教学大纲</a></li>
+                    <li><a href="../教学内容/teaching_content_theorycontent.html">理论课程内容</a></li>
+                    <li><a href="../教学内容/teaching_content_experimentoutline.html">实验课程教学大纲</a></li>
+                    <li><a href="../教学内容/teaching_content_experiencecontent.html">实验课程内容</a></li>
+                    <li><a href="../教学内容/teaching_content_practiceteaching.html">实践教学</a></li>
+                    <li><a href="../教学内容/teaching_content_organize.html">组织与安排</a></li>
+                </ul>
+
+                <!--********子菜单五 sub5 **********************-->
+                <ul class="undis" id="sub5">
+                    <li><a href="#" target="_blank">印制电路原理和工艺精品课程申报书</a></li>
+                    <li><a href="../申报表下载.doc">印制电路原理和工艺精品课程申报表下载</a></li>
+                </ul>
+                <!--**************************子菜单六 sub6 **********************-->
+                <ul class="undis" id="sub6">
+                    <li ><a  href="../教学手段/teaching_measure.html">教学方法与手段概述</a></li>
+                    <li><a href="../教学手段/teaching_measure1.html">教学方法</a></li>
+                    <li><a href="../教学手段/teaching_measure2.html">教学手段</a></li>
+                    <li><a href="../教学手段/teaching_measure3.html">教学设计</a></li>
+                </ul>
+
+                <!--********子菜单七sub7 **********************-->
+                <ul class="undis" id="sub7">
+                    <li><a  href="../教学条件/teaching_condition.html">教学条件概述</a></li>
+                    <li><a href="../教学条件/teaching_condition1.html">实践教学条件</a></li>
+                    <li><a href="../教学条件/teaching_condition2.html">网络教学环境</a></li>
+                    <li><a  href="../教学条件/teaching_condition3.html">教材建设</a></li>
+                    <li><a style="color: maroon;" href="../教学条件/teaching_condition4.html">参考资料</a></li>
+                </ul>
+
+                <!--********子菜单八sub8 **********************-->
+                <ul class="undis" id="sub8">
+                    <li><a href="../教学效果/teaching_effect.html">教学效果概述</a></li>
+                    <li><a href="../教学效果/teaching_effect1.html">同行评价</a></li>
+                    <li><a href="../教学效果/teaching_effect2.html">学生评教</a></li>
+                </ul>
+                <!--********子菜单九  sub9 **********************-->
+                <ul class="undis" id="sub9">
+                    <li><a href="../教学实践/teaching_practice.html">实践教学概述</a></li>
+                    <li><a href="../教学实践/teaching_practice_outline.html">实验课程教学大纲</a></li>
+                    <li><a href="../教学实践/teaching_practice_condition.html">实验条件</a></li>
+                    <li><a href="../教学实践/teaching_practice_prac.html">教学实习</a></li>
+                    <li><a href="../教学实践/teaching_practice_creat.html">创新性实验</a></li>
+                    <li id="zinav_1" onMouseMove="document.getElementById('m_nav1').style.display = 'block';"
+                        onmouseout="document.getElementById('m_nav1').style.display = 'none';">
+                        <a href="../教学实践/teaching_practice_basic.html">基础实验</a>&or;
+                        <ul id="m_nav1"  style="display:none;z-index: 2;position: absolute">
+                            <li ><a href="../教学实践/teaching_practice_content.html">实验课程内容</a></li>
+                            <li ><a href="../教学实践/实验指导书.doc">实验指导书</a></li>
+                            <li ><a href="../教学实践/标准实验报告.doc">标准实验报告</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--********子菜单十  sub10 **********************-->
+                <ul class="undis" id="sub10">
+                    <li><a href="../网络课堂/teaching_online.html">学堂概述</a></li>
+                    <li><a href="../网络课堂/teaching_online-exercise.html">习题解答</a></li>
+
+                    <li id="zinav_2" onMouseMove="document.getElementById('m_nav2').style.display = 'block';"
+                        onmouseout="document.getElementById('m_nav2').style.display = 'none';">
+                        <a href="#">课程资源</a>&or;
+                        <ul id="m_nav2" style="display: none;z-index: 2;position: absolute">
+                            <li><a href="../网络课堂/teaching_online_total.html">综合试题</a></li>
+                            <li><a href="../网络课堂/teaching_online_testpaper.html">考试样卷</a></li>
+                            <li><a href="../网络课堂/teaching_online_important.html">重点难点</a></li>
+                            <li><a href="../网络课堂/teaching_online_reference.html">参考文献</a></li>
+                            <li><a href="../电子教案.doc">电子教案</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../网络课堂/teaching_online_elec.html">电子课件</a></li>
+                    <li><a href="../网络课堂/teaching_online_work.html">作业提交与交流</a></li>
+                    <li><a href="../网络课堂/teaching_online_video.html">教学录像</a></li>
+                    <li><a href="../网络课堂/teaching_online_testself.html">在线自测</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="side">
+            <img src="../img/zimenu.png"/>
+            <p class="menu1">教学条件</p>
+            <div class="sidemenu">
+                <ul>
+                    <li onMouseMove="document.getElementsByClassName('more')[0].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[0].style.color= '#666666';"><a   href="teaching_condition.html">教学条件概述<span  class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[1].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[1].style.color= '#666666';"><a    href="teaching_condition1.html">实践条件概述<span   class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[2].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[2].style.color= '#666666';"><a   href="teaching_condition2.html">网络教学环境<span  class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[3].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[3].style.color= '#666666';"><a    href="teaching_condition3.html">教材建设<span  class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[4].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[4].style.color= '#666666';"><a  style="color: maroon;" href="teaching_condition4.html">参考资料<span style="color: maroon;"  class="more">></span></a></li>
+                </ul>
+            </div>
+            <p class="menu2">校内链接</p>
+            <div class="sidemenu">
+                <ul>
+                    <li onMouseMove="document.getElementsByClassName('more')[5].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[5].style.color= '#666666';"><a href="http://www.uestc.edu.cn/" target="_blank">电子科大<span  class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[6].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[6].style.color= '#666666';"><a href="http://www.me.uestc.edu.cn/" target="_blank">微固学院<span class="more">></span></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <p class="p1"><span class="span1"><a href="teaching_condition4.html">参考资料</a></span><a href="../index.html">首页</a>/<a href="teaching_condition.html">教学条件</a>/<a href="teaching_condition4.html">参考资料</a></p>
+            <span class="span2">印刷电路原理和工艺参考资料</span><br/>
+            <span class="title">一、经典教材推荐</span><br/>
+                <span>推荐之一：国家“十一五”规划教材，《现代印制电路原理与工艺》（第二版）.张怀武，何为等编著，机械工业出版社，2010年1月</span>
+                    <p>本书从印制电路基板材料、设计、制造、装配、焊接、质量保证、环保和质量标准等方面全面系统地讲述了印制电路技术的基本概念、原理和工艺，以及最新的印制板制造工艺和技术。涵盖了各类印制板制造所必须掌握的基础知识和实际知识，力求科学性、先进性、新颖性和实用性的统一。鉴于印制电路技术飞速发展，本书还增加了即将成为印制电路主要生产技术的高密度互连积成印制电路、无铅化技术与工艺、特殊用途的特种印制电路技术、集成元件印制板和印制电路发展趋势等内容。本书共分19章，着重基本概念和原理的阐述，深入浅出，理论联系实际。每章都配有习题，以指导读者深入地进行学习。为了方便教学，还提供了与本书配套的多媒体教学课件。</p>
+                    <p>这本教材收集了国外印制电路技术方面大量的新资料，结合我国现有的生产工艺的实际情况编写而成，具有一定的理论性和较强的实用价值。不仅作为高等院学电气信息类和化学类印制电路技术（原理和工艺）的教材，而且对从事印制电路行业的工程技术人员也是一部好的参考书。</p>
+                    <p>本书已被中国印制电路行业协会推荐为印制电路行业工程技术人员的培训教材。</p>
+                <span>推荐之二：《刚性印制电路》，梁瑞林编著，科学出版社，2008年5月</span>
+                    <p>本书是“表面组装与贴片式元器件技术”丛书之一。书中介绍了刚性印制电路设计者必备的电路基础知识、刚性印制电路设计、刚性印制线路板的原材料与制作工艺、刚性多层印制线路板制作新工艺等方面的技术知识。全书在内容上，尽可能地以图文并茂的形式向读者传递国际上先进的刚性印制电路制造技术方面的前沿知识，而避免冗长的理论探讨，以体现本书的实用性。</p>
+                     <p>本书可供电子电路、印制电路、电子材料与元器件、电子科学与技术、通信技术、电子工程、自动控制、计算机工程等领域的工程技术人员以及科研单位研究人员阅读，也可以作为工科院校师生的参考用书。</p>
+               <span>推荐之三 ：《印制电路技术》.金鸿，陈森等编著，化学工业出版社，2009年6月</span>
+                     <p>阐述了印制电路技术的基本概念、基本原理和基本工艺，以及最新的印制板制造工艺和技术，涵盖了各类印制板制造所必须掌握的基础知识和实际知识，达到了科学性、先进性、新颖性和实用性的统一。《印制电路技术》内容详实，深入浅出，充分体现高职特色，从内容到形式都有所突破和创新。</p>
+                        <p>《印制电路技术》可以作为电子信息类、电子信息科学类、电气自动化类等专业的专业课教材，还可以作为印制电路制造类企业从业人员的培训教材，以及印制电路制造业原辅材料和设备营销人员的自学读本。</p>
+
+            <span class="title">二、参考书目</span>
+                <p>[1]林金堵,龚永林.现代印制电路基础(第二版).上海：中国印制电路行业协会CPCA，印制电路信息杂志社，2005</p>
+                <p>[2]姜雪松. 印制电路板设计. 中国自动化网，2005年11月</p>
+                <p>[3]行业协会.最新印制电路设计、制作工艺与故障诊断、排除技术实用手册. 吉林音像出版社, 2005年</p>
+                <p>[4] Montrose，M.I.（美）著，吕英华等译.电磁兼容的印制电路板设计（第2版），机械工业出版社，2008年1月</p>
+                <p>[5] J.A.斯卡利特著(英), 陈暉,陈行健译.微电子学中的印制电路,科学出版社,1976年2月</p>
+                <p>[6]王健石主编.印制电路板技术标准手册, 中国标准出版社, 2007年6月</p>
+                <p>[7]陈兵,柴志强编著.挠性印制电路技术,科学出版社，2005年1月</p>
+            <span class="title">三、参考文献</span>
+            <ul><li>[1]林金堵.无铅化PCB及其对CCL基材的要求.《第六届全国覆铜板技术、市场研讨会》报告集，《覆铜板行业协会》，2005，6。
+            </li><li>[2]吴念祖,吴 坚.无铅焊接技术的特点及其应用难点.中国电子商情SMT，2005(3):44~47
+            </li><li>[3]白蓉生.无铅焊接之隐忧.《第六届全国覆铜板技术、市场研讨会》报告集，《覆铜板行业协会》，2005，6。
+            </li><li>[4]辜信实.“无铅”FR-4覆铜板的开发.印制电路信息，2005(7)：18~20
+            </li><li>[5]蔡巧儿.无铅兼容覆铜板IPC标准的最新进展.《第六届全国覆铜板技术、市场研讨会》报告集，《覆铜板行业协会》，2005，6。
+            </li><li>[6]肖代红,吴金昌,陈方泉.印制电路板铜面保护层对无铅焊点结构影响.电子工艺技术，2005，4:197~199
+            </li><li>[7]Wang Yang,He Wei,He Bo,Long Hairong,Liu Meicai. Research on crucial manufacturing Process of rigid-flex PCB. Journal of Electronic Science and Technology of China. 2006，4（1）：24~28
+            </li><li>[8]何为,汪洋,何波,刘美才,王慧秀.刚挠板等离子清洗去钻污工艺参数的非线性回归分析.印制电路信息，2006 ，6：44~47
+            </li><li>[9]王慧秀，何为，何波，龙海荣.高密度互联（HDI）印制电路板技术现状及发展.世界科技研究与发展，2006，2（28）：14~17
+            </li><li>[10]王慧秀,何为，张宣东,徐景浩,何波.微孔沉镀铜前处理研究.印制电路信息,2006 ，12：30~34
+            </li><li>[11]崔浩,何为，张宣东,徐景浩,何波.COF（chip on film）技术现状和发展前景.世界科技研究与发展,2006，28（1）：27~33
+            </li><li>[12]崔浩,何为,张宣东,徐景浩,何波.在挠性印制板中埋入无源和有源元件.印制电路信息，2007 ，3：59~64
+            </li><li>[13]王慧秀,刘松伦,张宣东,徐景浩,何波.超薄铜箔，湿法贴膜在细线路制作中的应用.2007春季国际PCB技术/信息论坛，上海.2007: 83~86
+            </li><li>[14]何为,袁正希,崔浩,关健 ,刘松伦,张宣东, 徐景浩,何波。刚挠结合板孔金属化化学沉铜工艺优化.2007春季国际PCB技术/信息论坛,上海.2007:224~227
+            </li><li>[15]He Wei,He Bo, Hu Ke, Guan Jian , Wang Yang. Non Linear Regression Analysis of Technological Parameters of the Plasma Desmear Process for Rigid-Flex PCB. Electronic Circuits World Convention 11 Conference ，2008，Shanghai
+            </li><li>[16]W. He, H. Cui, Y. Q. Mo, S. X. Wang, B. He, K. Hu, J. Guan, S. L. Liu andY. Wang. Producing Fine Pitch Substrate of COF by Semi-Additive Process. Transactions of the Institute of Metal Finishing.2008，28（6）：1~6
+            </li><li>[17]何为，崔浩张，宣东，徐景浩，刘松伦，何波. 应用无掩膜印刷术埋入微型聚合物厚膜电阻.印制电路信息，2007，5：33~37
+            </li><li>[18]何波，周国云,何为,崔浩，张宣东，徐景浩.在同一薄基材上嵌入电容和电阻提高PCB电性能和电路集成度.印制电路信息,2007，6：47~50
+            </li><li>[19]张晓杰,何为,崔浩,何波 ,张宣东,徐景浩,关健. 嵌入陶瓷电容器印制电路板的可靠性.印制电路信息，2007，8：38~43
+            </li><li>[20]Li Zhao , Wei He , Xiang-Hao Wu Bo He and Xu-Dong Zhang. Research on the Process of Buried /Blind Via in HDI Rigid-Flex Board. 3rd International Microsystems Packaging, Assembly and Circuits Technology (IMPACT) Conference,2008,TaiWan.
+            </li><li>[21]崔浩，何为 ， 莫云绮，何波 ，张宣东，徐景浩，关健. COF(chip on film) 30μm/30μm精细线路的研制. 2007秋季国际PCB技术/信息论坛,深圳.2007:212~218
+            </li><li>[22]赵丽，何为，莫芸绮，袁正希，何波，张宣东，徐景浩，关健，付万双.HDI刚挠结合板中的埋盲孔工艺研究.2007秋季国际PCB技术/信息论坛,深圳.2007:219~224
+            </li><li>[23]崔浩，何为，周国云，何波，张宣东，徐景浩，关健. 用模拟仿真软件预测嵌入元件的热效应. 印制电路信息，2007，9：58~64
+            </li><li>[24]何波，崔浩，何为，莫云绮，张宣东，徐景浩，关健.COF（Chip on Film）30μm／30μm精细线路的研制.印制电路信息，2008，3：29~32
+            </li><li>[25]汪洋，莫芸绮，何为，林均秀，徐玉珊，万永东.BGA焊点失效分析.印制电路信息，2008，7:61~65
+            </li><li>[26]聂昕,汪洋,莫云绮,何为. 印制电路板的CAF生长案例分析与控制对策.印制电路信息，2008，7：45-49
+            </li><li>[27]汪洋,何为,莫云绮,林均秀,徐玉珊. 贴片电容失效分析.电子元器件与材料.2008，27（11）：74~77
+            </li><li>[28]莫芸绮,何为,林均秀,徐玉珊,万永东,吴向好,何波. Production of fine line by Roll to Roll. 2008中日电子电路秋季大会——秋季国际PCB技术,2008.10,深圳
+            </li><li>[28]赵丽,周国云,何为,林均秀,徐玉珊,万永东,吴向好,何波. Research on laser micro vias processing in rigid and flexible substrate materials.2008中日电子电路秋季大会——秋季国际PCB技术,2008.10,深圳
+            </li><li>[30]龙发明,周国云,何为,林均秀,徐玉珊,万永东,张宣东,何波. The Development of a New Etchant Applied to PCB Industry. 2008中日电子电路秋季大会——秋季国际PCB技术,2008.10,深圳
+            </li><li>[31]汪洋,莫芸绮,何为.PCB镀金层厚度的测定.印制电路资讯.2008,5:81~83
+            </li><li>[32]汪洋，莫芸绮,聂昕,何波,关键,万永东,徐玉珊,吴向好.印制线路板CAF失效分析.第八届全国印制电路学术年会,2008，11 北京
+            </li><li>[33]Wang Yang, He Wei, Mo Yun-Qi,Wang Shou-Xu, Wu Xiang-Hao, He Bo, Zhang Xuan-Dong . Failure Analysis on the Chip Capacitor. 2009 IEEE Circuits and Systems International Conference on Testing and Diagnosis April 28-29, 2009, Chengdu, China
+            </li><li>[34]Mo Yun-Qi, He Wei, Wang Shou-Xu, Wu Xiang-Hao, He Bo, Zhang Xuan-Dong. Failure Analysis on the BGA Solder. 2009 IEEE Circuits and Systems International Conference on Testing and Diagnosis April 28-29, 2009, Chengdu, China
+            </li><li>[35]周国云,何为,王守绪,莫芸绮,何波,张宣东,林均秀,陈国辉.Hydrodynamics Analysis of Spray Etching Fine Conductive Lines in PCB. 2009春季国际PCB技术/信息论坛,2009,10,上海
+            </li><li>[36]吴向好,何为,赵丽, 陈国辉,周国云,何波,莫芸绮. Research on the Process of Crosshatching for Hollowing Board on PI Flexible Substrate. 2009春季国际PCB技术/信息论坛,2009,10,上海
+            </li><li>[37]倪乾峰,袁正希,何为,赵丽,陈国辉,周国云,何波,莫芸绮. Etchback effect analysis of Plasma on the PI. 2009春季国际PCB技术/信息论坛,2009,10,上海
+            </li><li>[38]张宣东,赵丽,陈国辉,周国云,莫芸绮,何波,何为. Research on Testing Method of the Gold-plated Layer Microporosity for PCB.2009春季国际PCB技术/信息论坛,2009,10,上海
+            </li><li>[39]倪乾峰,袁正希,莫芸绮,何为,何波,陈浪,王淞.应用于刚挠印制板无铅工艺兼容的不流动性半固化片.印制电路信息,2009,1：32~34
+            </li><li>[40]刘尊奇,张胜涛,何为,莫芸绮,何波,陈浪,林均秀.液晶电视用新型高性能COF基材的开发与测试.印制电路信息，2009，2：38~41
+            </li><li>[41]张宣东,吴向好,林均秀,徐玉珊,万永东,赵丽,何为.HDI刚挠印制板中的埋盲孔工艺研究.印制电路信息，2009，3：26~29
+            </li><li>[42]吴向好,陈国辉,何波,何为,赵丽,周国云.激光微孔加工技术在刚挠性基材中的研究.印制电路信息，2009，3：P 30~34
+            </li></ul>
+            <span class="title">四、常用期刊</span>
+            <ul><li>印制电路信息</li><li>
+                印制电路咨询</li><li>
+                中国高等教育</li><li>
+                中国高教研究</li><li>
+                高等教育研究</li><li>
+                高等工程教育研究</li><li>
+                中国大学教学</li><li>
+                高等理科教育</li><li>
+            </li></ul>
+
+            <span class="title">五、参考网站</span><br/>
+            <p>http://www.cpca.org.cn</p>
+        </div>
+    </div>
+</div>
+<div style="clear: both;height:50px;"></div>
+<div class="footer">
+    <p class="p1">
+        <span>友情链接：</span>
+        <a href="http://www.uestc.edu.cn/">电子科技大学</a>&nbsp;&nbsp;&nbsp;
+        <a href="http://www.me.uestc.edu.cn/">电子科技大学微固学院</a>
+    </p>
+    <p class="p2">
+        Copyright&copy;2009-2010 电子科技大学微电子与固体电子学院 All Rights Reserved        蜀ICP备06006552号
+    </p>
+
+</div>
+</body>
+</html>

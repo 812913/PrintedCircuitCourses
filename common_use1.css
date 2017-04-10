@@ -1,0 +1,104 @@
+.side
+ {
+     /*width:237px;*/
+    width: 22.53%;
+     float: left;
+ }
+.side img
+{
+    /*width:237px;*/
+    width:100%;
+}
+.side .menu1,.side .menu2
+{
+    /*width:227px;*/
+    clear: both;
+    width:95.78%;
+    height:35px;
+    background-color:#339999;
+    font-size: 18px;
+    line-height: 35px;
+    color: #ffffff;
+    padding-left: 10px;
+}
+.sidemenu ul
+{
+    list-style-type: none;
+    font-size:16px ;
+    background: -webkit-linear-gradient(top, rgba(210, 212, 187, 0.5), rgba(210, 212, 187, 0)); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom, rgba(210, 212, 187, 0.5), rgba(210, 212, 187, 0));  /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom, rgba(210, 212, 187,0.5), rgba(210, 212, 187, 0)); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to bottom, rgba(210, 212, 187, 0.5), rgba(210, 212, 187, 0));  /* 标准的语法（必须放在最后） */
+}
+.sidemenu ul li
+{
+    /*background-color:rgba(210, 212, 187, 0.71);*/
+    border-bottom:1px rgba(242,250,251,0.5) solid ;
+    /*width:227px;*/
+    width:95.78%;
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.sidemenu ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.sidemenu ul li a span{
+    color:#666666;
+    /*padding-left:120px;*/
+    /*padding-left:52.86%;*/
+    float: right;
+    padding-right: 10%;
+}
+.sidemenu ul li a:hover{
+    color:maroon;
+}
+
+.main
+{
+
+    margin-top: 30px;
+    /*width: 53%;*/
+    /*float: left;*/
+}
+.main p{
+    font-size: 16px;
+    text-indent: 32px;
+    line-height: 26px;
+    /*padding:1px 0;*/
+}
+.main p a{
+    text-decoration: none;
+    color: #339999;
+}
+.main p a:hover{
+    color: maroon;
+}
+.main .p1
+{
+    font-size: 18px;
+    letter-spacing: 5px;
+    text-indent: 0;
+}
+.main .p1 .span1{
+    font-family:SimHei;
+    font-size: 22px;
+    /*padding-right: 30px;*/
+    padding-right: 3.4%;
+}
+.main .p1 a,.main  .p1 .span1 a{
+    text-decoration: none;
+    color:#000000;
+}
+.main .p1 a:hover,.main  .p1 .span1 a:hover{
+    color: maroon;
+}
+.main .span2
+{
+    display: block;
+    font-family: "Adobe 仿宋 Std R";
+    font-size: 26px;
+    text-align: center;
+    margin-top: 30px;
+}

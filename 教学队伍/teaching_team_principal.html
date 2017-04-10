@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="initial-scale=1.0,width=device-width">
+    <link href="../common_use.css" rel="stylesheet" type="text/css">
+    <link href="../common_use1.css" rel="stylesheet" type="text/css">
+    <title>教学队伍—印刷电路精品课程</title>
+    <style>
+        .main
+        {
+            float: left;
+            width: 75.3%;
+            margin-left:2.1%;
+            /*margin-right:11%;*/
+        }
+        .main  p{
+            padding: 5px 0;
+            clear: both;
+        }
+        table
+        {
+            margin:10px 0;
+            width:100%;
+            font-size:16px;
+            text-align:left;
+            color:#333333;
+            border-width: 1px;
+            border-collapse:collapse;
+        }
+        #table2, #table4
+        {
+            height:300px;
+        }
+        #table3,#table5,#table7{
+            height:225px;
+        }
+        #table6
+        {
+            height:638px;
+        }
+        #table8
+        {
+            height:300px;
+        }
+        #table9,#table10
+        {
+            height:188px;
+        }
+        table  td
+        {
+            text-align: center;
+            border: 1px #999999 solid ;
+            font-size:16px;
+            font-family:华文新魏;
+        }
+        .t1th
+        {
+            width:15%;
+            height:35px;
+            background: #d4e3e5;
+        }
+        #table2 tr:hover, #table3 tr:hover,#table4 tr:hover,#table5 tr:hover,#table6 tr:hover,#table7 tr:hover,#table8 tr:hover,#table9 tr:hover,#table10 tr:hover{
+            background:#d4e3e5;
+        }
+        .photo
+        {
+            width:25%;
+            float: left;
+        }
+        .photo img
+          {
+              width:80%;
+            border: 1px solid #ccc;
+              /*height:80%;*/
+          }
+        .photo img:hover
+        {
+            opacity: 0.9;
+            border: 1px solid #777;
+            filter:Alpha(opacity=90); /* IE8 以及更早的浏览器 */
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function() {
+            var undis=document.getElementsByClassName("undis");
+            for( i=0;i<=9;i++)
+            {
+                undis[i].style.display="none";
+            }
+        }
+    </script>
+    <script src="../zinav.js" type="text/javascript"></script>
+
+</head>
+<body>
+<!--通用-->
+<div class="fixed">
+    <p><a href="#nav">&Lambda;</a></p>
+</div>
+<div class="header">
+    <div class="top">
+        <div class="left"><span>电子科技大学印刷电路原理与工艺精品课程 </span></div>
+        <div class="right">
+            <ul>
+                <li id="date">
+                    <script src="../DisplayDate.js"></script>
+                </li>
+                <li>管理入口&nbsp;&nbsp;&nbsp;|</li><!--关于管理入口-->
+                <li><a href="#" onClick="try{window.external.addFavorite(this.href,this.title);}catch(e){alert('加入收藏失败，请使用Ctrl+D进行添加');} return false;" title="电子科大精品课程" rel="sidebar">收藏本页&nbsp;&nbsp;&nbsp;|</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="bg">
+    <div class="logo">
+        <img id="logo1" src="../img/logo1.png"/>
+        <div class="span_left">
+            <span id="jcourse">精品课程建设</span><br/>
+            <span id="college">电子科技大学微固学院</span>
+        </div>
+        <div class="span_right">
+            <span id="print">印刷电路原理<br/></span>
+            <span id="and">和工艺</span>
+        </div>
+    </div>
+    <div class="nav_img">
+        <div class="nav" id="nav">
+            <ul>
+                <li><a  id="nav1"  href="../index.html" target="_blank"  onmouseover="doClick(this)">首页</a></li>
+                <li><a id="nav2"   href="../课程简介/course_introduce.html"  onMouseOver="doClick(this)">课程简介</a></li>
+                <li><a id="nav3" style="color: maroon;" href="teaching_team.html" target="_blank" onMouseOver="doClick(this)">教学队伍</a></li>
+                <li><a id="nav4" href="../教学内容/teaching_content.html" target="_blank" onMouseOver="doClick(this)">教学内容</a></li>
+                <li ><a id="nav5" href="#" target="_blank" onMouseOver="doClick(this)">申报书</a></li>
+                <li ><a id="nav6" href="../教学手段/teaching_measure.html" target="_blank" onMouseOver="doClick(this)">教学手段</a></li>
+                <li><a id="nav7" href="../教学条件/teaching_condition.html" target="_blank" onMouseOver="doClick(this)">教学条件</a></li>
+                <li ><a id="nav8" href="../教学效果/teaching_effect.html"  target="_blank" onMouseOver="doClick(this)">教学效果</a></li>
+                <li ><a id="nav9" href="../教学实践/teaching_practice.html" target="_blank" onMouseOver="doClick(this)">教学实践</a></li>
+                <li ><a id="nav10" href="../网络课堂/teaching_online.html"  target="_blank" onMouseOver="doClick(this)">网络课堂</a>
+            </ul>
+        </div>
+        <!--********** sub子菜单列表********************************-->
+        <div id="zinav">
+            <!--********子菜单一  sub1 **********************-->
+            <div id="bg_nav">
+                <ul class="undis" id="sub1">
+                    <li>最新公告:
+                        <span >印制电路原理和工艺精品课程网站新版已经修改完成，如有不足的地方，恳请各位专家提出您宝贵的意见!</span>
+                    </li>
+                </ul>
+
+                <!--********子菜单二 sub2 **********************-->
+                <ul class="undis" id="sub2">
+                    <li><a   href="../课程简介/course_introduce.html">课程概述</a></li>
+                    <li><a   href="../课程简介/course_introduce_history.html">历史沿革</a></li>
+                    <li><a href="../课程简介/course_introduce_feature.html">课程特色</a></li>
+                    <li><a href="../课程简介/course_introduce_level.html">同期水平</a></li>
+                    <li><a  href="../课程简介/course_introduce_construction.html">建设规划</a></li>
+                    <li><a href="../课程简介/course_introduce_measure.html">政策措施</a></li>
+                </ul>
+
+                <!--********子菜单三  sub3 **********************-->
+                <ul class="undis" id="sub3">
+                    <li><a  href="teaching_team.html">教学队伍概述</a></li>
+                    <li><a href="teaching_team_structure.html">教学队伍结构与素质</a></li>
+                    <li><a href="teaching_team_reform.html">教学改革与研究</a></li>
+                    <li><a style="color: maroon;" href="teaching_team_principal.html">课程负责人</a></li>
+                    <li><a  href="teaching_team_baseinformation.html">主讲教师介绍</a></li>
+                </ul>
+
+                <!--子菜单四  sub4 **********************-->
+                <ul class="undis" id="sub4">
+                    <li><a href="../教学内容/teaching_content.html">教学内容概述</a></li>
+                    <li><a href="../教学内容/teaching_content_outline.html">理论教学大纲</a></li>
+                    <li><a href="../教学内容/teaching_content_theorycontent.html">理论课程内容</a></li>
+                    <li><a href="../教学内容/teaching_content_experimentoutline.html">实验课程教学大纲</a></li>
+                    <li><a href="../教学内容/teaching_content_experiencecontent.html">实验课程内容</a></li>
+                    <li><a href="../教学内容/teaching_content_practiceteaching.html">实践教学</a></li>
+                    <li><a href="../教学内容/teaching_content_organize.html">组织与安排</a></li>
+                </ul>
+
+                <!--********子菜单五 sub5 **********************-->
+                <ul class="undis" id="sub5">
+                    <li><a href="#" target="_blank">印制电路原理和工艺精品课程申报书</a></li>
+                    <li><a href="../申报表下载.doc">印制电路原理和工艺精品课程申报表下载</a></li>
+                </ul>
+                <!--**************************子菜单六 sub6 **********************-->
+                <ul class="undis" id="sub6">
+                    <li ><a href="../教学手段/teaching_measure.html">教学方法与手段概述</a></li>
+                    <li><a href="../教学手段/teaching_measure1.html">教学方法</a></li>
+                    <li><a href="../教学手段/teaching_measure2.html">教学手段</a></li>
+                    <li><a href="../教学手段/teaching_measure3.html">教学设计</a></li>
+                </ul>
+
+                <!--********子菜单七sub7 **********************-->
+                <ul class="undis" id="sub7">
+                    <li><a href="../教学条件/teaching_condition.html">教学条件概述</a></li>
+                    <li><a href="../教学条件/teaching_condition1.html">实践教学条件</a></li>
+                    <li><a href="../教学条件/teaching_condition2.html">网络教学环境</a></li>
+                    <li><a href="../教学条件/teaching_condition3.html">教材建设</a></li>
+                    <li><a href="../教学条件/teaching_condition4.html">参考资料</a></li>
+                </ul>
+
+                <!--********子菜单八sub8 **********************-->
+                <ul class="undis" id="sub8">
+                    <li><a href="../教学效果/teaching_effect.html">教学效果概述</a></li>
+                    <li><a href="../教学效果/teaching_effect1.html">同行评价</a></li>
+                    <li><a href="../教学效果/teaching_effect2.html">学生评教</a></li>
+                </ul>
+                <!--********子菜单九  sub9 **********************-->
+                <ul class="undis" id="sub9">
+                    <li><a href="../教学实践/teaching_practice.html">实践教学概述</a></li>
+                    <li><a href="../教学实践/teaching_practice_outline.html">实验课程教学大纲</a></li>
+                    <li><a href="../教学实践/teaching_practice_condition.html">实验条件</a></li>
+                    <li><a href="../教学实践/teaching_practice_prac.html">教学实习</a></li>
+                    <li><a href="../教学实践/teaching_practice_creat.html">创新性实验</a></li>
+                    <li id="zinav_1" onMouseMove="document.getElementById('m_nav1').style.display = 'block';"
+                        onmouseout="document.getElementById('m_nav1').style.display = 'none';">
+                        <a href="../教学实践/teaching_practice_basic.html">基础实验</a>&or;
+                        <ul id="m_nav1"  style="display:none;z-index: 2;position: absolute">
+                            <li ><a href="../教学实践/teaching_practice_content.html">实验课程内容</a></li>
+                            <li ><a href="../教学实践/实验指导书.doc">实验指导书</a></li>
+                            <li ><a href="../教学实践/标准实验报告.doc">标准实验报告</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--********子菜单十  sub10 **********************-->
+                <ul class="undis" id="sub10">
+                    <li><a href="../网络课堂/teaching_online.html">学堂概述</a></li>
+                    <li><a href="../网络课堂/teaching_online-exercise.html">习题解答</a></li>
+
+                    <li id="zinav_2" onMouseMove="document.getElementById('m_nav2').style.display = 'block';"
+                        onmouseout="document.getElementById('m_nav2').style.display = 'none';">
+                        <a href="#">课程资源</a>&or;
+                        <ul id="m_nav2" style="display: none;z-index: 2;position: absolute">
+                            <li><a href="../网络课堂/teaching_online_total.html">综合试题</a></li>
+                            <li><a href="../网络课堂/teaching_online_testpaper.html">考试样卷</a></li>
+                            <li><a href="../网络课堂/teaching_online_important.html">重点难点</a></li>
+                            <li><a href="../网络课堂/teaching_online_reference.html">参考文献</a></li>
+                            <li><a href="../电子教案.doc">电子教案</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../网络课堂/teaching_online_elec.html">电子课件</a></li>
+                    <li><a href="../网络课堂/teaching_online_work.html">作业提交与交流</a></li>
+                    <li><a href="../网络课堂/teaching_online_video.html">教学录像</a></li>
+                    <li><a href="../网络课堂/teaching_online_testself.html">在线自测</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="side">
+            <img src="../img/zimenu.png"/>
+            <p class="menu1">教学队伍</p>
+            <div class="sidemenu">
+                <ul>
+                    <li onMouseMove="document.getElementsByClassName('more')[0].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[0].style.color= '#666666';"><a   href="teaching_team.html">教学队伍概述<span  class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[1].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[1].style.color= '#666666';"><a href="teaching_team_structure.html">队伍结构与素质<span  class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[2].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[2].style.color= '#666666';"><a href="teaching_team_reform.html">教学改革与研究<span class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[3].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[3].style.color= '#666666';"><a  style="color:maroon" href="teaching_team_principal.html">课程负责人<span style="color:maroon" class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[4].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[4].style.color= '#666666';"><a  href="teaching_team_baseinformation.html">主讲教师<span   class="more">></span></a></li>
+                </ul>
+            </div>
+            <p class="menu2">校内链接</p>
+            <div class="sidemenu">
+                <ul>
+                    <li onMouseMove="document.getElementsByClassName('more')[5].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[5].style.color= '#666666';"><a href="http://www.uestc.edu.cn/" target="_blank">电子科大<span  class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[6].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[6].style.color= '#666666';"><a href="http://www.me.uestc.edu.cn/" target="_blank">微固学院<span class="more">></span></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <p class="p1"><span class="span1"><a href="teaching_team_principal.html">课程负责人</a></span><a href="../index.html">首页</a>/<a href="teaching_team.html">教学队伍</a>/<a href="teaching_team_principal.html">课程负责人</a></p>
+            <span class="span2">印刷电路原理和工艺课程负责人</span><br/>
+            <table  cellpadding="0" cellspacing="0" align=center>
+                <tr >
+                    <td class="t1th">教师姓名</td>
+                    <td>何  为</td>
+                    <td class="t1th">职务/职称</td>
+                    <td>系主任/教授/博士生导师</td>
+                    <td rowspan="4" style="width:150px ;"><img style="height:100%" src="../img/principal1.jpg">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="t1th">所属学院</td>
+                    <td colspan="3">微电子与固体电子学院应用化学系</td>
+
+                </tr>
+                <tr>
+                    <td class="t1th">联系电话</td>
+                    <td>028－83201171</td>
+                    <td class="t1th">电子邮件</td>
+                    <td>heweiz@uestc.edu.cn</td>
+
+                </tr>
+                <tr>
+                    <td class="t1th">学习经历</td>
+                    <td colspan="3" >1984年—1987年重庆大学应用化学系攻读研究生；<br/>
+                        1990年9月至1992年9月年由国家公派到意大利佛罗伦萨大学化学系做访问学者；<br/>
+                        2000年8月至2001年11月年在佛罗伦萨大学化学系做客座教授；
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="t1th">荣誉称号</td>
+                    <td colspan="4">电子科技大学电子化学学科带头人；四川省精品课程主持人；印制电路信息杂志社编委；印制电路行业协会高级会员；佛罗伦萨大学化学系客座教授；电子科技大学优秀主讲教师；</td>
+
+                </tr>
+                <tr>
+                    <td class="t1th">研究方向</td>
+                    <td colspan="4">主要研究方向：应用电化学、敏感材料及传感器、纳米电子材料、印制电路等。负责承担了了省部级及粤港关键领域重点突破招标项目等10余项。已通过省、级鉴定（或验收）项目7项，近年来在其相关领域取得了一系列重要研究成果。其中，“2-6层FPC工业化制造关键技术”获四川省科技进步二等奖，“多层挠性印制电路板的关键技术研究及应用”获教育部科技进步二等奖，“手机用分层多层挠性印制板（FPC）”获广东省科技进步二等奖。在Electroanalysis,Eletrochimica Acta, Talanta,IEEE TRANSACTIONS ON ELECTRONICS PACKAGING MANUFACTURING，Plating & Surface Finishing, Transactions of the Institute of Metal Finishing等国内外公开发表论文130余篇，被《SCI》、《EI》、《ISTP》等国际权威机构检索30余篇次。申请国家发明专利10项（其中5项已获授权），出版教材三部。</td>
+                </tr>
+            </table>
+            <span>二、教学情况</span><br/>
+            <span>1、历年讲授的本科生主要课程（近三年）</span><br/>
+            <table  id="table2" cellpadding="0" cellspacing="0" align="center">
+                <tr>
+                    <td class="t1th">时间</td>
+                    <td class="t1th">课程名称</td>
+                    <td class="t1th">课程类别</td>
+                    <td class="t1th">周学时</td>
+                    <td class="t1th">学生总数</td>
+
+                </tr>
+                <tr>
+                    <td>2003-2008</td>
+                    <td>实验设计方法</td>
+                    <td>专业基础课</td>
+                    <td>2</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>2003-2008</td>
+                    <td>分析化学</td>
+                    <td>学科基础课</td>
+                    <td>3</td>
+                    <td>155</td>
+                </tr>
+                <tr>
+                    <td>2005-2009</td>
+                    <td>印制电路原理和工艺</td>
+                    <td>专业基础课</td>
+                    <td>3</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>2004-2006</td>
+                    <td>表面处理技术</td>
+                    <td>专业课</td>
+                    <td>2</td>
+                    <td>155</td>
+                </tr>
+                <tr>
+                    <td>2005-2009</td>
+                    <td>优化试验设计及数据处理 </td>
+                    <td>专业课（硕、博）</td>
+                    <td>4</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>2005-2008</td>
+                    <td>电化学原理和应用</td>
+                    <td>学位课（硕、博）</td>
+                    <td>4</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>2004-2005</td>
+                    <td>材料改性及表面处理技术</td>
+                    <td>专业课（硕士生）</td>
+                    <td>4</td>
+                    <td>40</td>
+                </tr>
+            </table>
+            <span>2、近三年承担的实践性教学</span><br/>
+            <table id="table3" cellpadding="0" cellspacing="0" align="center">
+                <tr class="t1th">
+                    <td>类别</td>
+                    <td>届数</td>
+                    <td>总人数</td>
+                </tr>
+                <tr>
+                    <td>分析化学实验</td>
+                    <td>2</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>印制电路原理和工艺</td>
+                    <td>1</td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <td>课程设计</td>
+                    <td>2</td>
+                    <td>55</td>
+                </tr>
+                <tr>
+                    <td>本科生毕业设计</td>
+                    <td>3</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>指导研究生（硕士）</td>
+                    <td>3</td>
+                    <td>9</td>
+                </tr>
+            </table>
+            <span>3、主持的教学研究课题</span>
+            <table id="table4" cellpadding="0" cellspacing="0" align="center">
+                <tr class="t1th">
+                    <td>序号</td>
+                    <td>课题名称</td>
+                    <td>来源</td>
+                    <td>时间</td>
+                    <td>本人所起作用</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>印制电路板本科实验工艺平台建设</td>
+                    <td>校实验室教学平台建设项目</td>
+                    <td>2009-2010</td>
+                    <td>项目负责人</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>印制电路本科实验教学改革</td>
+                    <td>校教改项目</td>
+                    <td>2009-2010</td>
+                    <td>项目负责人</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>《优化试验设计及数据分析》特色教材建设</td>
+                    <td>校特色教材建设项目</td>
+                    <td>2009-2010</td>
+                    <td>项目负责人</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>印制电路原理和工艺课程精品化研究</td>
+                    <td>校教学改革项目</td>
+                    <td>2007-2009</td>
+                    <td>项目负责人</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>微量分析测试公共实验教学平台</td>
+                    <td>校实验室建设项目</td>
+                    <td>2005－2006</td>
+                    <td>项目负责人</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>纳米材料实验室建设及纳米材料新实验</td>
+                    <td>校实验室建设项目</td>
+                    <td>2005-2006</td>
+                    <td>项目负责人</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>应用化学专业培养方案 </td>
+                    <td>校教改项目</td>
+                    <td>2003-2005</td>
+                    <td>项目负责人</td>
+                </tr>
+            </table>
+            <span>4、获得的教学表彰/奖励</span>
+            <table id="table5" cellpadding="0" cellspacing="0" align="center">
+                <tr class="t1th">
+                    <td>序号</td>
+                    <td>奖项名称</td>
+                    <td>授予单位</td>
+                    <td>署名次序</td>
+                    <td>时间</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>人才培养突出贡献“园丁奖”</td>
+                    <td>中国印制电路行业协会</td>
+                    <td>1</td>
+                    <td>2010</td></tr>
+                <tr>
+                    <td>2</td>
+                    <td>“电子科学与技术专业"三个链接"创新培养体系探索与实践”四川省教学成果一等</td>
+                    <td>四川省政府</td>
+                    <td>4</td>
+                    <td>2008</td></tr>
+                <tr>
+                    <td>3</td>
+                    <td>《现代印制电路原理与工艺》（教材）教学成果二等奖</td>
+                    <td>电子科技大学</td>
+                    <td>2</td>
+                    <td>2008</td></tr>
+                <tr>
+                    <td>4</td>
+                    <td>教学质量优秀主讲教师</td>
+                    <td>电子科技大学</td>
+                    <td>1</td>
+                    <td>2005</td></tr>
+                <tr>
+                    <td>5</td>
+                    <td>托普"基础课教学一等奖</td>
+                    <td>电子科技大学</td>
+                    <td>1</td>
+                    <td>2003</td>
+                </tr>
+            </table>
+            <span>5、发表教学研究论文</span>
+            <table id="table6" cellpadding="0" cellspacing="0" align="center">
+                <tr class="t1th"><td>时间</td><td>论文题目</td><td>刊物名称</td><td>署名次序</td></tr>
+                <tr><td>2003</td><td>纳米二氧化锡制备与特性测试</td><td>实验科学与技术</td><td>2</td></tr>
+                <tr><td>2003</td><td>无机化学实验教学改革</td><td>广西师范大学学报</td><td>2</td></tr>
+                <tr><td>2004</td><td>利用化学实验构筑21世纪素质教育平台的探索</td><td>实验科学与技术</td><td>2</td></tr>
+                <tr><td>2005</td><td>开设跨专业化学实验课程的体会</td><td>实验科学与技术</td><td>2</td></tr>
+                <tr><td>2005</td><td>线性扫描伏安法与循环伏安法实验技术</td><td>实验科学与技术</td><td>1</td></tr>
+                <tr><td>2006</td><td>《精细化工》课程设计的探索与实践研究</td><td>中国教育导刊</td><td>3</td></tr>
+                <tr><td>2006</td><td>应用化学专业本科人才培养方案的研究与实践</td><td>中国教育导刊	</td><td>1</td></tr>
+                <tr><td>2006</td><td>电子类工科学校开设化学课程设计的探索与实践</td><td>中国教育导刊</td><td>2</td></tr>
+                <tr><td>2006</td><td>优化试验设计在精细化工课程设计中的应用</td><td>太平洋学报</td><td>2</td></tr>
+                <tr><td>2007</td><td>运用《试验设计方法》提高实践教学质量的研究与实践</td><td>中国教育导刊</td><td>1</td></tr>
+                <tr><td>2007</td><td>《试验设计方法》课程实验教学内容的研究与实践</td><td>中国教育教学研究杂志</td><td>1</td></tr>
+                <tr><td>2007</td><td>溶胶-凝胶法制备BST铁电薄膜的实验教学</td><td>实验科学与技术</td><td>4</td></tr>
+                <tr><td>2007</td><td>有机磷毒剂敏感材料制备研究</td><td>中国科学教育</td><td>5</td></tr>
+                <tr><td>2007</td><td>涉及多知识点的物理化学综合实验――化学镀铜实验</td><td>中国科学教育</td><td>4</td></tr>
+                <tr><td>2010</td><td>均匀设计法在等离子体去钻污工艺优化中的应用</td><td>实验科学与技术</td><td>2</td></tr>
+                <tr><td>2010</td><td>优化试验设计在次亚磷酸钠化学镀铜工艺研究中的应用</td><td>实验科学与技术</td><td>1</td></tr>
+            </table>
+            <span>三、学术研究</span><br/>
+            <span>1、近年主持的科研项目</span>
+            <table id="table7" cellpadding="0" cellspacing="0" align="center">
+                <tr class="t1th">
+                    <td>序号</td>
+                    <td>课题名称</td>
+                    <td>课题类别</td>
+                    <td>课题来源</td>
+                    <td>年限</td>
+                    <td>本人所起作用</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>COF 挠性印制电路板关键技术</td>
+                    <td>两部一省科技特派员专项</td>
+                    <td>纵向</td>
+                    <td>2009－2010</td>
+                    <td>负责人</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>"电子薄膜与集成器件国家重点实验室珠海分实验室"建设专项</td>
+                    <td>基金</td>
+                    <td>纵向</td>
+                    <td>2008－2010</td>
+                    <td>负责人</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>手机用4~6层刚挠结合印制板量产化研究</td>
+                    <td>产业化研究</td>
+                    <td>横向</td>
+                    <td>2009-2010</td>
+                    <td>负责人</td></tr>
+                <tr>
+                    <td>4</td>
+                    <td>多层刚挠结合印制板及材料</td>
+                    <td>粤港关键领域重点突破招标项目</td>
+                    <td>纵向</td>
+                    <td>2007-2009</td>
+                    <td>负责人</td></tr>
+                <tr>
+                    <td>5</td>
+                    <td>HDI挠性多层印制电路板的关键技术研究</td>
+                    <td>应用基础</td>
+                    <td>横向</td>
+                    <td>2006－2007</td>
+                    <td>负责人</td></tr>
+            </table>
+            <span>2、学术论文</span>
+             <p style="padding-top:5px;padding-bottom: 0;">近五年来在国内外学术期刊和会议上共发表论文130余篇，其中SCI/EI收录30篇。6篇代表性论文如下:</p>
+            <table id="table8" style="margin: 0;" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="t1th">
+                        <td>序号</td>
+                        <td>题目</td>
+                        <td>刊物名称</td>
+                        <td>级别</td>
+                        <td>发表时间</td>
+                        <td>作者</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Analytical application of Poly{methyl[3-(2-hydroxy-3,4-difluoro)phenyl]propyl siloxane} as a QCM coating for DMMP detection</td>
+                        <td>Talanta</td>
+                        <td>SCI</td>
+                        <td>2008.6</td>
+                        <td>1</td></tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Producing fine pitch substrate of COF by semiadditive process and pulse reverse plating of Cu</td>
+                        <td>Transactions of the Institute of Metal Finishing</td>
+                        <td>SCI</td>
+                        <td>2008.1</td>
+                        <td>1</td>
+                    <tr>
+                        <td>3</td>
+                        <td>Characterization of electrodeposited cuprous oxide by magnetic field induction. Plating and Surface Finishing.</td>
+                        <td>Journal of Applied Surface Finishing</td>
+                        <td>EI</td>
+                        <td>2008.7</td>
+                        <td>1</td></tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Non Linear Regression Analysis of Technological Parameters of the Plasma Desmear Process for Rigid-Flex PCB.</td>
+                        <td>Journal of Applied Surface Finishing</td>
+                        <td>EI</td>　
+                        <td>2007.12</td>
+                        <td>1</td></tr>
+                    <tr>
+                        <td>5</td>
+                        <td>A Novel Nitric Acid Etchant and Its Application in Manufacturing Fine Lines for PCB.</td>
+                        <td>IEEE Transactions on Electronics Packaging Manufacturing</td>	　
+                        <td>SCI</td>
+                        <td>2010.1</td>
+                        <td>1</td></tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Research on the Process of Crosshatching for Hollowing Board on PI Flexible Substrate</td>
+                        <td>Journal of University of Electronic Science and Technology of China</td>
+                        <td>EI</td>
+                        <td>2009.9</td>
+                        <td>1</td></tr>
+                </table>
+             <span>3、获得知识产权</span>
+            <p style="padding-top:5px;padding-bottom: 0;">参与专利申请十多余项，排名第一并已经授权的有四项。</p>
+            <table  id="table9" cellpadding="0" cellspacing="0" align="center">
+                <tr class="t1th" >
+                    <td>序号</td>
+                    <td>专利名称</td>
+                    <td>专利类型</td>
+                    <td>授权号</td>
+                    <td>排名</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>一种纳米有机溶剂硅溶胶及其制备方法</td>
+                    <td>中国发明专利</td>
+                    <td>ZL200510020927.2</td>
+                    <td>第一</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>一种在挠性印制电路板聚酰亚胺基材上开窗口的方法及其刻蚀液</td>
+                    <td>中国发明专利</td>
+                    <td>ZL200510021881.6</td>
+                    <td>第一</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>一种印制电路蚀刻液</td>
+                    <td>中国发明专利</td>
+                    <td>ZL200810045291.0</td>
+                    <td>第一</td>
+                </tr>
+                <tr>
+                <td>4</td>
+                    <td>一种印制电路镀金层孔隙率测定方法</td>
+                    <td>中国发明专利</td>
+                    <td>ZL200810044226.6</td>
+                    <td>第一</td>
+                </tr>
+            </table>
+            <span>4、获得的学术研究表彰/奖励</span>
+            <table  id="table10" cellpadding="0" cellspacing="0" align="center">
+                <tr class="t1th">
+                    <td>序号</td>
+                    <td>奖项名称</td>
+                    <td>授予单位</td>
+                    <td>署名次序</td>
+                    <td>时间</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>四川省科技进步二等奖</td>
+                    <td>四川省政府</td>
+                    <td>1</td>
+                    <td>2008</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>教育部科技进步二等奖</td>
+                    <td>教育部</td>
+                    <td>1</td>
+                    <td>2008</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>广东省科技进步二等奖</td>
+                    <td>广东省政府</td>
+                    <td>2</td>
+                    <td>2008</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>珠海市科技进步一等奖</td>
+                    <td>珠海市政府</td>
+                    <td>2</td>
+                    <td>2008</td>
+                </tr>
+            </table>
+            <span>获奖证书：</span>
+            <div id="certificate">
+                <div class="photo">
+                    <img src="../img/principal2.jpg"/>
+                </div>
+                <div class="photo">
+                    <img src="../img/principal4.jpg"/>
+                </div>
+                <div class="photo">
+                    <img src="../img/principal5.jpg"/>
+                </div>
+                <div class="photo">
+                    <img src="../img/principal7.jpg"/>
+                </div>
+            </div>
+            <span>出版教材：</span>
+            <div id="book">
+                <div class="photo">
+                    <img src="../img/pribook1.jpg"/>
+                </div>
+                 <div class="photo">
+                     <img src="../img/pribook2.jpg"/>
+                 </div>
+                  <div class="photo">
+                      <img src="../img/pribook3.jpg"/>
+                  </div>
+                   <div class="photo">
+                       <img src="../img/pribook4.jpg"/>
+                   </div>
+            </div>
+        </div>
+</div>
+<div style="clear: both;height:50px;"></div>
+<div class="footer">
+    <p class="p1">
+        <span>友情链接：</span>
+        <a href="http://www.uestc.edu.cn/">电子科技大学</a>&nbsp;&nbsp;&nbsp;
+        <a href="http://www.me.uestc.edu.cn/">电子科技大学微固学院</a>
+    </p>
+    <p class="p2">
+        Copyright&copy;2009-2010 电子科技大学微电子与固体电子学院 All Rights Reserved        蜀ICP备06006552号
+    </p>
+</div>
+</body>
+</html>

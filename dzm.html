@@ -1,0 +1,45 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+</head>
+
+<body id='body' bgcolor="#009933" onclick="document.getElementById('body').style.backgroundColor='red'">
+
+<font size="5" color="#000000">课程成绩评定.<br/></font>
+
+<script type="text/javascript" >
+
+    var score=prompt("请输入你的成绩","10");
+    if(score !=null && score !=""){
+        document.write("课程成绩："+score+".<br/>");
+        if(score>100 && score <0){
+            alert("成绩输入有误");
+        }
+        else if(score>=0&&score<60){
+            alert("成绩等级为：不及格");
+            document.write("成绩等级为：不及格");
+        }
+        else if(score>=60&&score<70){
+            alert("成绩等级为：及格");
+            document.write("成绩等级为：及格");
+        }
+        else if(score>=70&&score<80){
+            alert("成绩等级为：良好");
+            document.write("成绩等级为：良好");
+        }
+        else if(score>=80 && score < 90){
+            alert("成绩等级为：优秀");
+            document.write("成绩等级为：优秀");
+        }
+        else if(score>=90 && score <=100){
+            alert("成绩等级为：非常优秀");
+            document.write("成绩等级为：非常优秀");
+        }
+
+    }
+</script>
+</body>
+</html>

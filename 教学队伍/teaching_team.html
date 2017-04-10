@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="initial-scale=1.0,width=device-width">
+    <link href="../common_use.css" rel="stylesheet" type="text/css">
+    <link href="../common_use1.css" rel="stylesheet" type="text/css">
+    <title>教学队伍—印刷电路精品课程</title>
+    <style>
+        .main
+        {
+            float: left;
+            width: 75.3%;
+            margin-left:2.1%;
+            /*margin-right:11%;*/
+        }
+        .main .span3
+        {
+            display: inline-block;
+            color: #339999;
+            padding: 5px 0;
+        }
+        .main p{
+            padding:2px 0;
+        }
+        #display1,#display2
+        {
+            text-align: center;
+            padding:10px 0;
+        }
+        .information table
+        {
+            width:100%;
+            height:400px;
+            font-size:16px;
+            text-align:left;
+            color:#333333;
+            border-width: 1px;
+            border-collapse:collapse;
+        }
+        .information table .thead{
+            background:#62cfbd;
+        }
+        .information table  td
+        {
+            text-align: center;
+            border: 1px #999999 solid ;
+            font-size:16px;
+            font-family:华文新魏;
+        }
+        .information table .odd{
+            background-color:#d4e3e5;
+        }
+        .information table .even{
+            background-color:#c3dde0;
+        }
+        #marquee_demo
+        {
+            margin-bottom: 0;
+        }
+        #marquee_product1 table
+        {
+            width:518px;
+            height:100px;
+            border:0;
+            mso-cellspacing: 0;
+        }
+        #marquee_product1 table tr td
+        {
+            width:180px;
+            padding:3px 15px 3px 15px;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function() {
+            var undis=document.getElementsByClassName("undis");
+            for( i=0;i<=9;i++)
+            {
+                undis[i].style.display="none";
+            }
+        }
+    </script>
+    <script src="../zinav.js" type="text/javascript"></script>
+
+</head>
+<body>
+<!--通用-->
+<div class="fixed">
+    <p><a href="#nav">&Lambda;</a></p>
+</div>
+<div class="header">
+    <div class="top">
+        <div class="left"><span>电子科技大学印刷电路原理与工艺精品课程 </span></div>
+        <div class="right">
+            <ul>
+                <li id="date">
+                    <script src="../DisplayDate.js"></script>
+                </li>
+                <li>管理入口&nbsp;&nbsp;&nbsp;|</li><!--关于管理入口-->
+                <li><a href="#" onClick="try{window.external.addFavorite(this.href,this.title);}catch(e){alert('加入收藏失败，请使用Ctrl+D进行添加');} return false;" title="电子科大精品课程" rel="sidebar">收藏本页&nbsp;&nbsp;&nbsp;|</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="bg">
+    <div class="logo">
+        <img id="logo1" src="../img/logo1.png"/>
+        <div class="span_left">
+            <span id="jcourse">精品课程建设</span><br/>
+            <span id="college">电子科技大学微固学院</span>
+        </div>
+        <div class="span_right">
+            <span id="print">印刷电路原理<br/></span>
+            <span id="and">和工艺</span>
+        </div>
+    </div>
+    <div class="nav_img">
+        <div class="nav" id="nav">
+            <ul>
+                <li><a  id="nav1"  href="../index.html" target="_blank"  onmouseover="doClick(this)">首页</a></li>
+                <li><a id="nav2"   href="../课程简介/course_introduce.html"  onMouseOver="doClick(this)">课程简介</a></li>
+                <li><a id="nav3" style="color: maroon;" href="teaching_team.html" target="_blank" onMouseOver="doClick(this)">教学队伍</a></li>
+                <li><a id="nav4" href="../教学内容/teaching_content.html" target="_blank" onMouseOver="doClick(this)">教学内容</a></li>
+                <li ><a id="nav5" href="#" target="_blank" onMouseOver="doClick(this)">申报书</a></li>
+                <li ><a id="nav6" href="../教学手段/teaching_measure.html" target="_blank" onMouseOver="doClick(this)">教学手段</a></li>
+                <li><a id="nav7" href="../教学条件/teaching_condition.html" target="_blank" onMouseOver="doClick(this)">教学条件</a></li>
+                <li ><a id="nav8" href="../教学效果/teaching_effect.html"  target="_blank" onMouseOver="doClick(this)">教学效果</a></li>
+                <li ><a id="nav9" href="../教学实践/teaching_practice.html" target="_blank" onMouseOver="doClick(this)">教学实践</a></li>
+                <li ><a id="nav10" href="../网络课堂/teaching_online.html"  target="_blank" onMouseOver="doClick(this)">网络课堂</a>
+            </ul>
+        </div>
+        <!--********** sub子菜单列表********************************-->
+        <div id="zinav">
+            <!--********子菜单一  sub1 **********************-->
+            <div id="bg_nav">
+                <ul class="undis" id="sub1">
+                    <li>最新公告:
+                        <span >印制电路原理和工艺精品课程网站新版已经修改完成，如有不足的地方，恳请各位专家提出您宝贵的意见!</span>
+                    </li>
+                </ul>
+
+                <!--********子菜单二 sub2 **********************-->
+                <ul class="undis" id="sub2">
+                    <li><a   href="../课程简介/course_introduce.html">课程概述</a></li>
+                    <li><a   href="../课程简介/course_introduce_history.html">历史沿革</a></li>
+                    <li><a href="../课程简介/course_introduce_feature.html">课程特色</a></li>
+                    <li><a href="../课程简介/course_introduce_level.html">同期水平</a></li>
+                    <li><a  href="../课程简介/course_introduce_construction.html">建设规划</a></li>
+                    <li><a href="../课程简介/course_introduce_measure.html">政策措施</a></li>
+                </ul>
+
+                <!--********子菜单三  sub3 **********************-->
+                <ul class="undis" id="sub3">
+                    <li><a style="color: maroon;" href="teaching_team.html">教学队伍概述</a></li>
+                    <li><a href="teaching_team_structure.html">教学队伍结构与素质</a></li>
+                    <li><a href="teaching_team_reform.html">教学改革与研究</a></li>
+                    <li><a href="teaching_team_principal.html">课程负责人</a></li>
+                    <li><a href="teaching_team_baseinformation.html">主讲教师介绍</a></li>
+                </ul>
+
+                <!--子菜单四  sub4 **********************-->
+                <ul class="undis" id="sub4">
+                    <li><a href="../教学内容/teaching_content.html">教学内容概述</a></li>
+                    <li><a href="../教学内容/teaching_content_outline.html">理论教学大纲</a></li>
+                    <li><a href="../教学内容/teaching_content_theorycontent.html">理论课程内容</a></li>
+                    <li><a href="../教学内容/teaching_content_experimentoutline.html">实验课程教学大纲</a></li>
+                    <li><a href="../教学内容/teaching_content_experiencecontent.html">实验课程内容</a></li>
+                    <li><a href="../教学内容/teaching_content_practiceteaching.html">实践教学</a></li>
+                    <li><a href="../教学内容/teaching_content_organize.html">组织与安排</a></li>
+                </ul>
+
+                <!--********子菜单五 sub5 **********************-->
+                <ul class="undis" id="sub5">
+                    <li><a href="#" target="_blank">印制电路原理和工艺精品课程申报书</a></li>
+                    <li><a href="../申报表下载.doc">印制电路原理和工艺精品课程申报表下载</a></li>
+                </ul>
+                <!--**************************子菜单六 sub6 **********************-->
+                <ul class="undis" id="sub6">
+                    <li ><a href="../教学手段/teaching_measure.html">教学方法与手段概述</a></li>
+                    <li><a href="../教学手段/teaching_measure1.html">教学方法</a></li>
+                    <li><a href="../教学手段/teaching_measure2.html">教学手段</a></li>
+                    <li><a href="../教学手段/teaching_measure3.html">教学设计</a></li>
+                </ul>
+
+                <!--********子菜单七sub7 **********************-->
+                <ul class="undis" id="sub7">
+                    <li><a href="../教学条件/teaching_condition.html">教学条件概述</a></li>
+                    <li><a href="../教学条件/teaching_condition1.html">实践教学条件</a></li>
+                    <li><a href="../教学条件/teaching_condition2.html">网络教学环境</a></li>
+                    <li><a href="../教学条件/teaching_condition3.html">教材建设</a></li>
+                    <li><a href="../教学条件/teaching_condition4.html">参考资料</a></li>
+                </ul>
+
+                <!--********子菜单八sub8 **********************-->
+                <ul class="undis" id="sub8">
+                    <li><a href="../教学效果/teaching_effect.html">教学效果概述</a></li>
+                    <li><a href="../教学效果/teaching_effect1.html">同行评价</a></li>
+                    <li><a href="../教学效果/teaching_effect2.html">学生评教</a></li>
+                </ul>
+                <!--********子菜单九  sub9 **********************-->
+                <ul class="undis" id="sub9">
+                    <li><a href="../教学实践/teaching_practice.html">实践教学概述</a></li>
+                    <li><a href="../教学实践/teaching_practice_outline.html">实验课程教学大纲</a></li>
+                    <li><a href="../教学实践/teaching_practice_condition.html">实验条件</a></li>
+                    <li><a href="../教学实践/teaching_practice_prac.html">教学实习</a></li>
+                    <li><a href="../教学实践/teaching_practice_creat.html">创新性实验</a></li>
+                    <li id="zinav_1" onMouseMove="document.getElementById('m_nav1').style.display = 'block';"
+                        onmouseout="document.getElementById('m_nav1').style.display = 'none';">
+                        <a href="../教学实践/teaching_practice_basic.html">基础实验</a>&or;
+                        <ul id="m_nav1"  style="display:none;z-index: 2;position: absolute">
+                            <li ><a href="../教学实践/teaching_practice_content.html">实验课程内容</a></li>
+                            <li ><a href="../教学实践/实验指导书.doc">实验指导书</a></li>
+                            <li ><a href="../教学实践/标准实验报告.doc">标准实验报告</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--********子菜单十  sub10 **********************-->
+                <ul class="undis" id="sub10">
+                    <li><a href="../网络课堂/teaching_online.html">学堂概述</a></li>
+                    <li><a href="../网络课堂/teaching_online-exercise.html">习题解答</a></li>
+
+                    <li id="zinav_2" onMouseMove="document.getElementById('m_nav2').style.display = 'block';"
+                        onmouseout="document.getElementById('m_nav2').style.display = 'none';">
+                        <a href="#">课程资源</a>&or;
+                        <ul id="m_nav2" style="display: none;z-index: 2;position: absolute">
+                            <li><a href="../网络课堂/teaching_online_total.html">综合试题</a></li>
+                            <li><a href="../网络课堂/teaching_online_testpaper.html">考试样卷</a></li>
+                            <li><a href="../网络课堂/teaching_online_important.html">重点难点</a></li>
+                            <li><a href="../网络课堂/teaching_online_reference.html">参考文献</a></li>
+                            <li><a href="../电子教案.doc">电子教案</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../网络课堂/teaching_online_elec.html">电子课件</a></li>
+                    <li><a href="../网络课堂/teaching_online_work.html">作业提交与交流</a></li>
+                    <li><a href="../网络课堂/teaching_online_video.html">教学录像</a></li>
+                    <li><a href="../网络课堂/teaching_online_testself.html">在线自测</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="side">
+            <img src="../img/zimenu.png"/>
+            <p class="menu1">教学队伍</p>
+            <div class="sidemenu">
+                <ul>
+                    <li onMouseMove="document.getElementsByClassName('more')[0].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[0].style.color= '#666666';"><a style="color:maroon"  href="teaching_team.html">教学队伍概述<span  style="color:maroon" class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[1].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[1].style.color= '#666666';"><a href="teaching_team_structure.html">队伍结构与素质<span  class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[2].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[2].style.color= '#666666';"><a href="teaching_team_reform.html">教学改革与研究<span class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[3].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[3].style.color= '#666666';"><a href="teaching_team_principal.html">课程负责人<span class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[4].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[4].style.color= '#666666';"><a  href="teaching_team_baseinformation.html">主讲教师<span  class="more">></span></a></li>
+                </ul>
+            </div>
+            <p class="menu2">校内链接</p>
+            <div class="sidemenu">
+                <ul>
+                    <li onMouseMove="document.getElementsByClassName('more')[5].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[5].style.color= '#666666';"><a href="http://www.uestc.edu.cn/" target="_blank">电子科大<span  class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[6].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[6].style.color= '#666666';"><a href="http://www.me.uestc.edu.cn/" target="_blank">微固学院<span class="more">></span></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <p class="p1"><span class="span1"><a href="teaching_team.html">教学队伍概述</a></span><a href="../index.html">首页</a>/<a href="teaching_team.html">教学队伍</a>/<a href="teaching_team.html">教学队伍概述</a></p>
+            <span class="span2">印刷电路原理和工艺教学队伍概述</span><br/>
+            <p>自从80年代初“印制电路原理和工艺”课程开设以来，就由我校的相关教师成立了教学团队。近年来，随着电子技术的快速发展，印制电路日益重要，国内对高层次人才的需求十分旺盛。因此，从2000年，印制电路原理和工艺提升为电子科技大学本科教学中的专业基础课程，以何为教授为负责人的新一代教学团队一直把教师队伍建设和师资素质提高放在课程建设的第一位。课程组以“印制电路原理和工艺”学科为依托，始终保持着老、中、青相结合的合理师资结构，以及传、帮、带代培养提高师资水平的优良传统，从而确保了教师队伍承前启后地持续建设和蓬勃发展。</p>
+            <p>近半个世纪以来，课程组先后培养造就了十余名学术造诣高，教学能力突出的课程骨干教师。如今，电子科技大学“印制电路原理和工艺”课程组已形成一支以学术、学科带头人为核心，教授、副教授和优秀青年骨干教师为主体的课程教学团队。通过团队长期以来的协作努力、共同研讨和研究，课程组已在课堂教学、实验教学、实践教学、教材建设、中青年教师培养、课程体系设置和改革等方面取得了显著成效，相关成果获得了国家“十一五”规划教材，四川省优秀教学成果一等奖，编著出版了国内目前唯一的用于普通学校教学的教材，发表教学论文数16篇、科技论文数百篇。所取得的成果均在“印制电路原理和工艺”的教学实践中得到应用，为提升教学质量和效果发挥出了突出的作用。</p>
+            <p id="display1">课程教学团队主要成员展示</p>
+            <!--图片不间断滚动，marquee_demo这个宽度一定要小于含有滚动内容的那个table的宽度，否则将不滚动 -->
+            <div id="marquee_demo" style="overflow:hidden;width:100%;text-align:right;border:0 solid #ccc">
+                <table cellspacing="0" cellpadding="3" align="center" border="0" width="518">
+                    <tr>
+                        <td id="marquee_product1" valign="top">
+                            <table>
+                                <tr>
+                                    <td align="center" style="padding:3px 15px 3px 15px;" ><img style="width: 100px; height: 150px; border: 0;" src="../img/team1.jpg" >何为教授</td>
+                                    <td align="center" style="padding:3px 15px 3px 15px;"><img  style="width: 100px; height: 150px; border: 0;" src="../img/team2.jpg" >张怀武教授</td>
+                                     <td align="center" style="padding:3px 15px 3px 15px;"><img style="width: 100px; height: 150px; border: 0;" src="../img/team4.jpg" >张万里教授</td>
+                                    <td align="center" style="padding:3px 15px 3px 15px;"><img  style="width: 100px; height: 150px; border: 0;" src="../img/team5.gif" >王守绪副教授</td>
+                                    <td align="center" style="padding:3px 15px 3px 15px;"><img  style="width: 100px; height: 150px; border: 0;" src="../img/team6.jpg" >薛卫东教授</td>
+                                    <td align="center" style="padding:3px 15px 3px 15px;"><img  style="width: 100px; height: 150px; border: 0;" src="../img/team7.gif" >李元勋副教授</td>
+                                    <td align="center" style="padding:3px 15px 3px 15px;"><img  style="width: 100px; height: 150px; border: 0;" src="../img/team8.jpg" >唐先忠教授</td>
+                                    <td align="center" style="padding:3px 15px 3px 15px;"><img  style="width: 100px; height: 150px; border: 0;" src="../img/team9.jpg" >唐斌副教授</td>
+                                    <td align="center" style="padding:3px 15px 3px 15px;"><img  style="width: 100px; height: 150px; border: 0;" src="../img/team10.jpg" >张敏工程师</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td id="marquee_product2" valign="top"></td>
+                    </tr>
+                </table>
+            </div>
+            <script type="text/javascript">
+                var speed=36;
+                marquee_product2.innerHTML=marquee_product1.innerHTML;
+                function Marquee(){
+                    if(marquee_demo.scrollLeft>=marquee_product1.scrollWidth){
+                        marquee_demo.scrollLeft=0;
+                    }
+                    else{
+                        marquee_demo.scrollLeft++;
+                    }
+                }
+                var MyMar=setInterval(Marquee,speed);
+                marquee_demo.onmouseover=function(){clearInterval(MyMar);};
+                marquee_demo.onmouseout=function(){MyMar=setInterval(Marquee,speed);}
+            </script>
+            <!-- 滚动end -->
+            <p id="display2">课程教师基本信息表</p>
+            <div class="information">
+                <table>
+                    <tr class="thead">
+                        <td>姓名</td>
+                        <td>性别</td>
+                        <td>出生年月</td>
+                        <td>职称</td>
+                        <td>学位</td>
+                        <td>学科专业</td>
+                        <td>在教学中承担的工作</td>
+                    </tr>
+                    <tr class="odd" onmousemove="this.style.backgroundColor='#C1D0CF';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+                        <td>何为</td>
+                        <td>男</td>
+                        <td>1957.09</td>
+                        <td>教授</td>
+                        <td>硕士</td>
+                        <td>应用电化学</td>
+                        <td>课程负责人、教学大纲制定、理论课部分内容主讲</td>
+                    </tr>
+                    <tr class="even" onmousemove="this.style.backgroundColor='#C1D0CF';" onmouseout="this.style.backgroundColor='#c3dde0';">
+                        <td>胡文成</td>
+                        <td>男</td>
+                        <td>1967.03</td>
+                        <td>教授</td>
+                        <td>博士</td>
+                        <td>纳米材料</td>
+                        <td>主讲教师、网页建设</td>
+                    </tr>
+                    <tr class="odd" onmousemove="this.style.backgroundColor='#C1D0CF';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+                        <td>张怀武</td>
+                        <td>男</td>
+                        <td>1959.09</td>
+                        <td>教授</td>
+                        <td>博士</td>
+                        <td>微电子与固体电子学</td>
+                        <td>青年教师指导、理论课部分内容主讲</td>
+                    </tr>
+                    <tr class="even" onmousemove="this.style.backgroundColor='#C1D0CF';" onmouseout="this.style.backgroundColor='#c3dde0';">
+                        <td>王守绪</td>
+                        <td>男</td>
+                        <td>1964.09</td>
+                        <td>副教授</td>
+                        <td>硕士</td>
+                        <td>无机化学</td>
+                        <td>教学辅导、学生实验指导</td>
+                    </tr>
+                    <tr class="odd" onmousemove="this.style.backgroundColor='#C1D0CF';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+                        <td>张万里</td>
+                        <td>男</td>
+                        <td>1966.09</td>
+                        <td>教授</td>
+                        <td>博士</td>
+                        <td>电子材料</td>
+                        <td>主讲教师</td>
+                    </tr>
+                    <tr class="even" onmousemove="this.style.backgroundColor='#C1D0CF';" onmouseout="this.style.backgroundColor='#c3dde0';" >
+                        <td>薛卫东</td>
+                        <td>男</td>
+                        <td>1963.08</td>
+                        <td>教授</td>
+                        <td>博士</td>
+                        <td>应用化学</td>
+                        <td>青年教师指导、主讲教师</td>
+                    </tr>
+                    <tr class="odd" onmousemove="this.style.backgroundColor='#C1D0CF';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+                        <td>唐先忠</td>
+                        <td>男</td>
+                        <td>1963.12</td>
+                        <td>教授</td>
+                        <td>博士</td>
+                        <td>有机化学</td>
+                        <td>实验教师</td>
+                    </tr>
+                    <tr class="even" onmousemove="this.style.backgroundColor='#C1D0CF';" onmouseout="this.style.backgroundColor='#c3dde0';">
+                        <td>李元勋</td>
+                        <td>男</td>
+                        <td>1979.06</td>
+                        <td>副教授</td>
+                        <td>博士</td>
+                        <td>电子材料</td>
+                        <td>教学辅导、学生实验指导</td>
+                    </tr>
+                    <tr class="odd" onmousemove="this.style.backgroundColor='#C1D0CF';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+                        <td>何波</td>
+                        <td>男</td>
+                        <td>1968.03</td>
+                        <td>高级工程师</td>
+                        <td>硕士</td>
+                        <td>印刷电路</td>
+                        <td>外聘实践教学教师，指导学生实验和生产工艺</td>
+                    </tr>
+                    <tr class="even" onmousemove="this.style.backgroundColor='#C1D0CF';" onmouseout="this.style.backgroundColor='#c3dde0';">
+                        <td>唐斌</td>
+                        <td>男</td>
+                        <td>1981.12</td>
+                        <td>副教授</td>
+                        <td>博士</td>
+                        <td>材料学</td>
+                        <td>主讲教师、网页建设</td>
+                    </tr>
+                    <tr class="odd" onmousemove="this.style.backgroundColor='#C1D0CF';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+                        <td>张敏</td>
+                        <td>女</td>
+                        <td>1957.05</td>
+                        <td>工程师</td>
+                        <td>学士</td>
+                        <td>应用化学</td>
+                        <td>实验准备与指导</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="clear: both;height:50px;"></div>
+<div class="footer">
+    <p class="p1">
+        <span>友情链接：</span>
+        <a href="http://www.uestc.edu.cn/">电子科技大学</a>&nbsp;&nbsp;&nbsp;
+        <a href="http://www.me.uestc.edu.cn/">电子科技大学微固学院</a>
+    </p>
+    <p class="p2">
+        Copyright&copy;2009-2010 电子科技大学微电子与固体电子学院 All Rights Reserved        蜀ICP备06006552号
+    </p>
+</div>
+</body>
+</html>

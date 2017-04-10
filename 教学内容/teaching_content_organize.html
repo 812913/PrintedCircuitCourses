@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="initial-scale=1.0,width=device-width">
+    <link href="../common_use.css" rel="stylesheet" type="text/css">
+    <link href="../common_use1.css" rel="stylesheet" type="text/css">
+    <title>教学内容—印刷电路精品课程</title>
+    <style>
+        .main
+        {  float: left;
+            width: 75.3%;
+            margin-left:2.1%;
+            overflow: hidden;
+        }
+        .main p{
+            padding:2px 0;
+        }
+        .main p span{
+            color: #339999;
+        }
+
+        .title{
+            display: inline-block;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .img1{
+            width: 320px;
+            float: right;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function() {
+            var undis=document.getElementsByClassName("undis");
+            for( i=0;i<=9;i++)
+            {
+                undis[i].style.display="none";
+            }
+        }
+    </script>
+    <script src="../zinav.js" type="text/javascript"></script>
+</head>
+<body>
+<!--通用-->
+<div class="fixed">
+    <p><a href="#nav">&Lambda;</a></p>
+</div>
+<div class="header">
+    <div class="top">
+        <div class="left"><span>电子科技大学印刷电路原理与工艺精品课程 </span></div>
+        <div class="right">
+            <ul>
+                <li id="date">
+                    <script src="../DisplayDate.js"></script>
+                </li>
+                <li>管理入口&nbsp;&nbsp;&nbsp;|</li><!--关于管理入口-->
+                <li><a href="#" onClick="try{window.external.addFavorite(this.href,this.title);}catch(e){alert('加入收藏失败，请使用Ctrl+D进行添加');} return false;" title="电子科大精品课程" rel="sidebar">收藏本页&nbsp;&nbsp;&nbsp;|</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="bg">
+    <div class="logo">
+        <img id="logo1" src="../img/logo1.png"/>
+        <div class="span_left">
+            <span id="jcourse">精品课程建设</span><br/>
+            <span id="college">电子科技大学微固学院</span>
+        </div>
+        <div class="span_right">
+            <span id="print">印刷电路原理<br/></span>
+            <span id="and">和工艺</span>
+        </div>
+    </div>
+    <div class="nav_img">
+        <div class="nav" id="nav">
+            <ul>
+                <li style="margin-left: 40px; text-align: center"><a  id="nav1"  href="#"  onmouseover="doClick(this)">首页</a></li>
+                <li><a  id="nav2" href="#" onMouseOver="doClick(this)">课程简介</a></li>
+                <li><a id="nav3" href="#" onMouseOver="doClick(this)">教学队伍</a></li>
+                <li><a style="color:maroon" id="nav4" href="#" onMouseOver="doClick(this)">教学内容</a></li>
+                <li ><a id="nav5" href="#" onMouseOver="doClick(this)">申报书</a></li>
+                <li ><a id="nav6" href="#" onMouseOver="doClick(this)">教学手段</a></li>
+                <li><a id="nav7" href="#" onMouseOver="doClick(this)">教学条件</a></li>
+                <li ><a id="nav8" href="#" onMouseOver="doClick(this)">教学效果</a></li>
+                <li ><a id="nav9" href="#" onMouseOver="doClick(this)">教学实践</a></li>
+                <li ><a id="nav10" href="#" onMouseOver="doClick(this)">网络课堂</a>
+            </ul>
+        </div>
+        <!--********** sub子菜单列表********************************-->
+        <div id="zinav">
+            <!--********子菜单一  sub1 **********************-->
+            <div id="bg_nav">
+                <ul class="undis" id="sub1">
+                    <li>最新公告:
+                        <span >印制电路原理和工艺精品课程网站新版已经修改完成，如有不足的地方，恳请各位专家提出您宝贵的意见!</span>
+                    </li>
+                </ul>
+
+                <!--********子菜单二 sub2 **********************-->
+                <ul class="undis" id="sub2">
+                    <li><a   href="../课程简介/course_introduce.html">课程概述</a></li>
+                    <li><a   href="../课程简介/course_introduce_history.html">历史沿革</a></li>
+                    <li><a href="../课程简介/course_introduce_feature.html">课程特色</a></li>
+                    <li><a href="../课程简介/course_introduce_level.html">同期水平</a></li>
+                    <li><a  href="../课程简介/course_introduce_construction.html">建设规划</a></li>
+                    <li><a href="../课程简介/course_introduce_measure.html">政策措施</a></li>
+                </ul>
+
+                <!--********子菜单三  sub3 **********************-->
+                <ul class="undis" id="sub3">
+                    <li><a  href="../教学队伍/teaching_team.html">教学队伍概述</a></li>
+                    <li><a   href="../教学队伍/teaching_team_structure.html">教学队伍结构与素质</a></li>
+                    <li><a  href="../教学队伍/teaching_team_reform.html">教学改革与研究</a></li>
+                    <li><a  href="../教学队伍/teaching_team_principal.html">课程负责人</a></li>
+                    <li><a  href="../教学队伍/teaching_team_baseinformation.html">主讲教师介绍</a></li>
+                </ul>
+
+                <!--子菜单四  sub4 **********************-->
+                <ul class="undis" id="sub4">
+                    <li><a  href="../教学内容/teaching_content.html">教学内容概述</a></li>
+                    <li><a href="../教学内容/teaching_content_outline.html">理论教学大纲</a></li>
+                    <li><a href="../教学内容/teaching_content_theorycontent.html">理论课程内容</a></li>
+                    <li><a href="../教学内容/teaching_content_experimentoutline.html">实验课程教学大纲</a></li>
+                    <li><a href="../教学内容/teaching_content_experiencecontent.html">实验课程内容</a></li>
+                    <li><a href="../教学内容/teaching_content_practiceteaching.html">实践教学</a></li>
+                    <li><a style="color: maroon;" href="../教学内容/teaching_content_organize.html">组织与安排</a></li>
+                </ul>
+
+                <!--********子菜单五 sub5 **********************-->
+                <ul class="undis" id="sub5">
+                    <li><a href="#" target="_blank">印制电路原理和工艺精品课程申报书</a></li>
+                    <li><a href="../申报表下载.doc">印制电路原理和工艺精品课程申报表下载</a></li>
+                </ul>
+                <!--**************************子菜单六 sub6 **********************-->
+                <ul class="undis" id="sub6">
+                    <li ><a href="../教学手段/teaching_measure.html">教学方法与手段概述</a></li>
+                    <li><a href="../教学手段/teaching_measure1.html">教学方法</a></li>
+                    <li><a href="../教学手段/teaching_measure2.html">教学手段</a></li>
+                    <li><a href="../教学手段/teaching_measure3.html">教学设计</a></li>
+                </ul>
+
+                <!--********子菜单七sub7 **********************-->
+                <ul class="undis" id="sub7">
+                    <li><a href="../教学条件/teaching_condition.html">教学条件概述</a></li>
+                    <li><a href="../教学条件/teaching_condition1.html">实践教学条件</a></li>
+                    <li><a href="../教学条件/teaching_condition2.html">网络教学环境</a></li>
+                    <li><a href="../教学条件/teaching_condition3.html">教材建设</a></li>
+                    <li><a href="../教学条件/teaching_condition4.html">参考资料</a></li>
+                </ul>
+
+                <!--********子菜单八sub8 **********************-->
+                <ul class="undis" id="sub8">
+                    <li><a href="../教学效果/teaching_effect.html">教学效果概述</a></li>
+                    <li><a href="../教学效果/teaching_effect1.html">同行评价</a></li>
+                    <li><a href="../教学效果/teaching_effect2.html">学生评教</a></li>
+                </ul>
+                <!--********子菜单九  sub9 **********************-->
+                <ul class="undis" id="sub9">
+                    <li><a href="../教学实践/teaching_practice.html">实践教学概述</a></li>
+                    <li><a href="../教学实践/teaching_practice_outline.html">实验课程教学大纲</a></li>
+                    <li><a href="../教学实践/teaching_practice_condition.html">实验条件</a></li>
+                    <li><a href="../教学实践/teaching_practice_prac.html">教学实习</a></li>
+                    <li><a href="../教学实践/teaching_practice_creat.html">创新性实验</a></li>
+                    <li id="zinav_1" onMouseMove="document.getElementById('m_nav1').style.display = 'block';"
+                        onmouseout="document.getElementById('m_nav1').style.display = 'none';">
+                        <a href="../教学实践/teaching_practice_basic.html">基础实验</a>&or;
+                        <ul id="m_nav1"  style="display:none;z-index: 2;position: absolute">
+                            <li ><a href="../教学实践/teaching_practice_content.html">实验课程内容</a></li>
+                            <li ><a href="../教学实践/实验指导书.doc">实验指导书</a></li>
+                            <li ><a href="../教学实践/标准实验报告.doc">标准实验报告</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--********子菜单十  sub10 **********************-->
+                <ul class="undis" id="sub10">
+                    <li><a href="../网络课堂/teaching_online.html">学堂概述</a></li>
+                    <li><a href="../网络课堂/teaching_online-exercise.html">习题解答</a></li>
+
+                    <li id="zinav_2" onMouseMove="document.getElementById('m_nav2').style.display = 'block';"
+                        onmouseout="document.getElementById('m_nav2').style.display = 'none';">
+                        <a href="#">课程资源</a>&or;
+                        <ul id="m_nav2" style="display: none;z-index: 2;position: absolute">
+                            <li><a href="../网络课堂/teaching_online_total.html">综合试题</a></li>
+                            <li><a href="../网络课堂/teaching_online_testpaper.html">考试样卷</a></li>
+                            <li><a href="../网络课堂/teaching_online_important.html">重点难点</a></li>
+                            <li><a href="../网络课堂/teaching_online_reference.html">参考文献</a></li>
+                            <li><a href="../电子教案.doc">电子教案</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../网络课堂/teaching_online_elec.html">电子课件</a></li>
+                    <li><a href="../网络课堂/teaching_online_work.html">作业提交与交流</a></li>
+                    <li><a href="../网络课堂/teaching_online_video.html">教学录像</a></li>
+                    <li><a href="../网络课堂/teaching_online_testself.html">在线自测</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="side">
+            <img src="../img/zimenu.png"/>
+            <p class="menu1">教学内容</p>
+            <div class="sidemenu">
+                <ul>
+                    <li onMouseMove="document.getElementsByClassName('more')[0].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[0].style.color= '#666666';"><a href="teaching_content.html">教学内容概述<span  class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[1].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[1].style.color= '#666666';"><a  href="teaching_content_outline.html">理论教学大纲<span class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[2].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[2].style.color= '#666666';"><a   href="teaching_content_theorycontent.html">理论课程内容<span  class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[3].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[3].style.color= '#666666';"><a href="teaching_content_experimentoutline.html">实验课程教学大纲<span class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[4].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[4].style.color= '#666666';"><a href="teaching_content_experiencecontent.html">实验课程内容<span class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[5].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[5].style.color= '#666666';"><a href="teaching_content_practiceteaching.html">实践教学<span class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[6].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[6].style.color= '#666666';"><a  style="color:maroon" href="teaching_content_organize.html">组织与安排<span style="color:maroon" class="more">></span></a></li>
+                </ul>
+            </div>
+            <p class="menu2">校内链接</p>
+            <div class="sidemenu">
+                <ul>
+                    <li onMouseMove="document.getElementsByClassName('more')[7].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[7].style.color= '#666666';"><a href="http://www.uestc.edu.cn/" target="_blank">电子科大<span  class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[8].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[8].style.color= '#666666';"><a href="http://www.me.uestc.edu.cn/" target="_blank">微固学院<span class="more">></span></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <p class="p1"><span class="span1"><a href="teaching_content_organize.html">教学内容组织安排</a></span><a href="../index.html">首页</a>/<a href="teaching_content.html">教学内容</a>/<a href="teaching_content_organize.html">教学内容组织安排</a></p>
+            <span class="span2">印刷电路原理和工艺教学内容组织安排</span><br/>
+            <span class="title">一、教学内容组织：</span>
+                <p>1.根据“印制电路原理和工艺”课程知识点多的特点，课程小组在教学内容组织上的基本原则是重点突出、启发思维、内容创新。在课堂讲授中，采用提出问题→讲解问题→解决问题→应用举例，使学生在此过程中掌握了知识，增长了分析问题和解决问题的能力，提高了知识素养。例如在讨论印制板微孔清洗技术时，提出“为什么微孔清洗工艺必需与基材性质、孔径大小相对应？”这样的实际问题，首先抓住学生的注意力，提高学生的学习兴趣。然后进行内容讲解，最后在结合一些实际工程应用，例如刚性PCB产品与FPCB产品微孔清洗工艺。</p>
+                 <p>   2.注重知识的整合，培养学生解决实际问题的能力。印制电路制造技术涉及电路设计与分析、化学与物理、材料工程、环境科学等多学科的知识与技术，课程组以印制电路制造工艺与产品的要求为目标，实现知识的整合。在教学中，注重产品的性能与影响因素与各知识点之间的关系，注重应用各种基本知识与技术解决问题能力的培养，而对一些复杂繁琐的问题不要求数学推导的完整性，只对有关主要公式进行必要说明，让学生自己去探讨公式背后的物理实质。</p>
+                <p>   3.在强调基本原理与工艺训练的同时，也介绍了特色印制电路板的制造技术，以及未来的发展方向，如全印制电子技术，以提高学生解决实际问题的能力。</p>
+                <p>   4.根据课程实践性强的特点，课程组安排了相应的实验项目，分为基础性实验和创新性实验两大部分，充分利用现有的教学硬件设施培养学生的动手能力和创新精神。</p>
+            <span class="title">二、教学内容安排：</span><br/>
+            <img class="img1"  src="../img/organize1.jpg"/>
+            <p>1、按先修课程的基础和后续课程的需要，科学配置教学资源，合理计划和分配课堂教学的教学学时数，知识讲解与实验两大教学板块的具体教学内容安排与学时分配为如下。 课堂理论教学总共安排32学时，具体分布为：</p>
+                <p>印制电路概述[4学时]。介绍印制电路的发展历史、现代印制电路的发展趋势、以及基本概念。</p>
+                <p>基板材料[2.5学时]。介绍覆铜箔层压板的分类及GB的编号，覆铜箔层压板的性能，覆铜箔层压板的制备工艺。</p>
+                <p>印制板设计与布线[3学时]。介绍印制电路的设计过程，学习印制电路的布局和布线的基本规则与应用软件的使用。</p>
+                <p>照相制版技术[3学时]。介绍印制电路的照相制板的特点照相制板用材料及制板原理，讨论感光材料的曝光、显影、定影及图形反转的定义及原理，以及重氮盐感光材料的特点及制板原理。</p>
+                <p>图形转移原理与工艺[3.5学时]。介绍光致抗蚀剂的分类及作用机理、光致抗蚀剂的工艺过程，讨论丝网制板工艺原理，以及干膜抗蚀剂的特点及性能。</p>
+                <p>化学镀与电镀技术[3.5学时]。介绍化学镀和电镀原理、工艺过程及在孔金属化、整板电镀、图形电镀、插头镀金中的应用。</p>
+                <p>孔金属化技术[3.0学时]。介绍了解孔金属化技术在印制电路技术中的地位与作用，以及埋孔、通孔、盲孔、黒孔技术等基本概念。印制电路板机械钻孔、激光打孔等微孔制作技术及其特点。掌握微孔清洗技术及使用范围。了解孔金属化技术的发展趋势。</p>
+                <p>刻蚀技术[2.5学时]。介绍氯化铜、氯化铁等蚀刻液的特点、工艺过程及再生技术，讨论其基本组成及特点。</p>
+                <p>焊接技术[2.0学时]。介绍焊接技术在印制电路技术中的地位与作用、焊料的分类与不同焊料的特点，以及焊接的基本工艺并了解其工艺参数，讨论印制板焊料的发展方向与绿色焊料的基本特性。</p>
+                <p>多层印制电路板[15学时]。介绍多层印制电路板的特点，讨论多层印制电路板制造的工艺流程和关键技术。</p>
+                <p>挠性、刚性、刚挠结合印制电路板[1.5学时]。介绍挠性、刚性、刚挠结合印制电路板的特点，重点讨论它们的使用范围和制造的工艺流程和关键技术。</p>
+                <p>印制板质量与标准与印制电路三废控制（2学时）。介绍印制板行业质量控制标准体系制订原则，不同地区国家标准与军用标准的内容；印制板三废的来源与特点；固体和液体废料处理原则与技术；绿色生产的主要意义。</p>
+            <p>2、基础实验教学部份安排16学时，具体分布为：</p>
+                <p>实验一、减层法单面板印制电路板制造工艺研究（4学时）</p>
+                <p>  实验二、4层印制电路板制作工艺研究（4学时）</p>
+                <p> 实验三、镍金合金电镀最佳配方和工艺条件的优化（4学时）</p>
+                <img class="img1" src="../img/organize2.jpg"/>
+               <p>实验四、综合设计实验（4学时），该实验要求：利用所学的"印制电路原理和工艺"的知识，科学地设计试验方案，开发出一种可用于具有特色功能的电子产品的印制电路板，并制作出该印制电路板。</p>
+               <p>创新实验根据同学的兴趣，在老师的指导下设计实验内容与步骤，实验方案经过老师审核后，进入实验室独立完成。</p>
+                <p>所有实验均可通过申请、预约，或任课教师安排指导，进入实验室进行实验。对于同学自己设计的新实验，在实验方案经过老师确认后，在任课教师安排指导下进入实验室自行完成。</p>
+        </div>
+    </div>
+
+<div style="clear: both;height:50px;"></div>
+<div style="clear: both;" class="footer">
+    <p class="p1">
+        <span>友情链接：</span>
+        <a href="http://www.uestc.edu.cn/">电子科技大学</a>&nbsp;&nbsp;&nbsp;
+        <a href="http://www.me.uestc.edu.cn/">电子科技大学微固学院</a>
+    </p>
+    <p class="p2">
+        Copyright&copy;2009-2010 电子科技大学微电子与固体电子学院 All Rights Reserved        蜀ICP备06006552号
+    </p>
+
+</div>
+</body>
+</html>

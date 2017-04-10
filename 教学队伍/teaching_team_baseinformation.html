@@ -1,0 +1,1946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="initial-scale=1.0,width=device-width">
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link href="../common_use.css" rel="stylesheet" type="text/css">
+    <link href="../common_use1.css" rel="stylesheet" type="text/css">
+    <title>教学队伍—印刷电路精品课程</title>
+    <style>
+        .main
+        {
+            float: left;
+            width: 75.3%;
+            margin-left:2.1%;
+            /*margin-right:11%;*/
+        }
+        .main  p{
+            padding: 5px 0;
+        }
+        .main .p3
+        {
+            text-align: center;
+            /*background: #d4e3e5;*/
+            margin-bottom: 10px;
+            margin-top: 20px;
+            color: #339999;
+            padding-left:50px;
+        }
+        .none1, .none2, .none3, .none4, .none5, .none6, .none7, .none8, .none9
+        {
+            display: none;
+        }
+        table
+        {
+            clear: both;
+            /*width:75.3%;*/
+            margin:10px 0;
+            width:100%;
+
+            text-align:left;
+            color:#333333;
+            border-width: 1px;
+            border-collapse:collapse;
+
+        }
+        table  td
+        {
+            text-align: center;
+            border: 1px #999999 solid ;
+            font-size:16px;
+            font-family:华文新魏;
+            padding:5px;
+        }
+        table .thead
+        {
+            background: #d4e3e5;
+        }
+        table tr:hover
+        {
+            background: #d4e3e5;
+        }
+        .title1
+        {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .personimg
+        {
+            max-width:100%;
+            float: left;
+            padding-right: 12px;
+        }
+        .click1,.click2,.click3,.click4,.click5,.click6,.click7,.click8,.click9 {
+            display: inline-block;
+            /*border-radius: 4px;*/
+            /*background-color:#d4e3e5;*/
+            background-color:#ffffff;
+            border: none;
+            color: #339999;
+            text-align: center;
+            font-size: 16px;
+            padding: 5px;
+            margin: 5px;
+            width: 100%;
+            transition: all 0.5s;
+            cursor: pointer;
+            box-shadow: 3px 5px 10px rgba(109, 130, 166, 0.67);
+        }
+        .click1 span, .click2 span,.click3 span,.click4 span,.click5 span,.click6 span,.click7 span,.click8 span,.click9 span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .click1 span:after,.click2 span:after,.click3 span:after,.click4 span:after,.click5 span:after,.click6 span:after,.click7 span:after,.click8 span:after,.click9 span:after {
+            content: '»';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .click1:hover span,.click2:hover span,.click3:hover span,.click4:hover span,.click5:hover span,.click6:hover span,.click7:hover span,.click8:hover span,.click9:hover span {
+            padding-right: 25px;
+        }
+
+        .click1:hover span:after,.click2:hover span:after,.click3:hover span:after,.click4:hover span:after,.click5:hover span:after,.click6:hover span:after,.click7:hover span:after,.click8:hover span:after,.click9:hover span:after{
+            opacity: 1;
+            right: 0;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function() {
+            var undis=document.getElementsByClassName("undis");
+            for( i=0;i<=9;i++)
+            {
+                undis[i].style.display="none";
+            }
+        };
+        $(document).ready(function(){
+            $(".click1").click(function () {
+                $(".none1").slideToggle();
+            });
+        });
+        $(document).ready(function(){
+            $(".click2").click(function () {
+                $(".none2").slideToggle();
+            });
+        });
+        $(document).ready(function(){
+            $(".click3").click(function () {
+                $(".none3").slideToggle();
+            });
+        });
+        $(document).ready(function(){
+            $(".click4").click(function () {
+                $(".none4").slideToggle();
+            });
+        });
+        $(document).ready(function(){
+            $(".click5").click(function () {
+                $(".none5").slideToggle();
+            });
+        });
+        $(document).ready(function(){
+            $(".click6").click(function () {
+                $(".none6").slideToggle();
+            });
+        });
+        $(document).ready(function(){
+            $(".click7").click(function () {
+                $(".none7").slideToggle();
+            });
+        });
+        $(document).ready(function(){
+            $(".click8").click(function () {
+                $(".none8").slideToggle();
+            });
+        });
+        $(document).ready(function(){
+            $(".click9").click(function () {
+                $(".none9").slideToggle();
+            });
+        })
+    </script>
+    <script src="../zinav.js" type="text/javascript"></script>
+
+</head>
+<body>
+<!--通用-->
+<div class="fixed">
+    <p><a href="#nav">&Lambda;</a></p>
+</div>
+<div class="header">
+    <div class="top">
+        <div class="left"><span>电子科技大学印刷电路原理与工艺精品课程 </span></div>
+        <div class="right">
+            <ul>
+                <li id="date">
+                    <script src="../DisplayDate.js"></script>
+                </li>
+                <li>管理入口&nbsp;&nbsp;&nbsp;|</li><!--关于管理入口-->
+                <li><a href="#" onClick="try{window.external.addFavorite(this.href,this.title);}catch(e){alert('加入收藏失败，请使用Ctrl+D进行添加');} return false;" title="电子科大精品课程" rel="sidebar">收藏本页&nbsp;&nbsp;&nbsp;|</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="bg">
+    <div class="logo">
+        <img id="logo1" src="../img/logo1.png"/>
+        <div class="span_left">
+            <span id="jcourse">精品课程建设</span><br/>
+            <span id="college">电子科技大学微固学院</span>
+        </div>
+        <div class="span_right">
+            <span id="print">印刷电路原理<br/></span>
+            <span id="and">和工艺</span>
+        </div>
+    </div>
+    <div class="nav_img">
+        <div class="nav" id="nav">
+            <ul>
+                <li><a  id="nav1"  href="../index.html" target="_blank"  onmouseover="doClick(this)">首页</a></li>
+                <li><a id="nav2"   href="../课程简介/course_introduce.html"  onMouseOver="doClick(this)">课程简介</a></li>
+                <li><a id="nav3" style="color: maroon;" href="teaching_team.html" target="_blank" onMouseOver="doClick(this)">教学队伍</a></li>
+                <li><a id="nav4" href="../教学内容/teaching_content.html" target="_blank" onMouseOver="doClick(this)">教学内容</a></li>
+                <li ><a id="nav5" href="#" target="_blank" onMouseOver="doClick(this)">申报书</a></li>
+                <li ><a id="nav6" href="../教学手段/teaching_measure.html" target="_blank" onMouseOver="doClick(this)">教学手段</a></li>
+                <li><a id="nav7" href="../教学条件/teaching_condition.html" target="_blank" onMouseOver="doClick(this)">教学条件</a></li>
+                <li ><a id="nav8" href="../教学效果/teaching_effect.html"  target="_blank" onMouseOver="doClick(this)">教学效果</a></li>
+                <li ><a id="nav9" href="../教学实践/teaching_practice.html" target="_blank" onMouseOver="doClick(this)">教学实践</a></li>
+                <li ><a id="nav10" href="../网络课堂/teaching_online.html"  target="_blank" onMouseOver="doClick(this)">网络课堂</a>
+            </ul>
+        </div>
+        <!--********** sub子菜单列表********************************-->
+        <div id="zinav">
+            <!--********子菜单一  sub1 **********************-->
+            <div id="bg_nav">
+                <ul class="undis" id="sub1">
+                    <li>最新公告:
+                        <span >印制电路原理和工艺精品课程网站新版已经修改完成，如有不足的地方，恳请各位专家提出您宝贵的意见!</span>
+                    </li>
+                </ul>
+
+                <!--********子菜单二 sub2 **********************-->
+                <ul class="undis" id="sub2">
+                    <li><a   href="../课程简介/course_introduce.html">课程概述</a></li>
+                    <li><a   href="../课程简介/course_introduce_history.html">历史沿革</a></li>
+                    <li><a href="../课程简介/course_introduce_feature.html">课程特色</a></li>
+                    <li><a href="../课程简介/course_introduce_level.html">同期水平</a></li>
+                    <li><a  href="../课程简介/course_introduce_construction.html">建设规划</a></li>
+                    <li><a href="../课程简介/course_introduce_measure.html">政策措施</a></li>
+                </ul>
+
+                <!--********子菜单三  sub3 **********************-->
+                <ul class="undis" id="sub3">
+                    <li><a  href="teaching_team.html">教学队伍概述</a></li>
+                    <li><a href="teaching_team_structure.html">教学队伍结构与素质</a></li>
+                    <li><a href="teaching_team_reform.html">教学改革与研究</a></li>
+                    <li><a href="teaching_team_principal.html">课程负责人</a></li>
+                    <li><a style="color: maroon;" href="teaching_team_baseinformation.html">主讲教师介绍</a></li>
+                </ul>
+
+                <!--子菜单四  sub4 **********************-->
+                <ul class="undis" id="sub4">
+                    <li><a href="../教学内容/teaching_content.html">教学内容概述</a></li>
+                    <li><a href="../教学内容/teaching_content_outline.html">理论教学大纲</a></li>
+                    <li><a href="../教学内容/teaching_content_theorycontent.html">理论课程内容</a></li>
+                    <li><a href="../教学内容/teaching_content_experimentoutline.html">实验课程教学大纲</a></li>
+                    <li><a href="../教学内容/teaching_content_experiencecontent.html">实验课程内容</a></li>
+                    <li><a href="../教学内容/teaching_content_practiceteaching.html">实践教学</a></li>
+                    <li><a href="../教学内容/teaching_content_organize.html">组织与安排</a></li>
+                </ul>
+
+                <!--********子菜单五 sub5 **********************-->
+                <ul class="undis" id="sub5">
+                    <li><a href="#" target="_blank">印制电路原理和工艺精品课程申报书</a></li>
+                    <li><a href="../申报表下载.doc">印制电路原理和工艺精品课程申报表下载</a></li>
+                </ul>
+                <!--**************************子菜单六 sub6 **********************-->
+                <ul class="undis" id="sub6">
+                    <li ><a href="../教学手段/teaching_measure.html">教学方法与手段概述</a></li>
+                    <li><a href="../教学手段/teaching_measure1.html">教学方法</a></li>
+                    <li><a href="../教学手段/teaching_measure2.html">教学手段</a></li>
+                    <li><a href="../教学手段/teaching_measure3.html">教学设计</a></li>
+                </ul>
+
+                <!--********子菜单七sub7 **********************-->
+                <ul class="undis" id="sub7">
+                    <li><a href="../教学条件/teaching_condition.html">教学条件概述</a></li>
+                    <li><a href="../教学条件/teaching_condition1.html">实践教学条件</a></li>
+                    <li><a href="../教学条件/teaching_condition2.html">网络教学环境</a></li>
+                    <li><a href="../教学条件/teaching_condition3.html">教材建设</a></li>
+                    <li><a href="../教学条件/teaching_condition4.html">参考资料</a></li>
+                </ul>
+
+                <!--********子菜单八sub8 **********************-->
+                <ul class="undis" id="sub8">
+                    <li><a href="../教学效果/teaching_effect.html">教学效果概述</a></li>
+                    <li><a href="../教学效果/teaching_effect1.html">同行评价</a></li>
+                    <li><a href="../教学效果/teaching_effect2.html">学生评教</a></li>
+                </ul>
+                <!--********子菜单九  sub9 **********************-->
+                <ul class="undis" id="sub9">
+                    <li><a href="../教学实践/teaching_practice.html">实践教学概述</a></li>
+                    <li><a href="../教学实践/teaching_practice_outline.html">实验课程教学大纲</a></li>
+                    <li><a href="../教学实践/teaching_practice_condition.html">实验条件</a></li>
+                    <li><a href="../教学实践/teaching_practice_prac.html">教学实习</a></li>
+                    <li><a href="../教学实践/teaching_practice_creat.html">创新性实验</a></li>
+                    <li id="zinav_1" onMouseMove="document.getElementById('m_nav1').style.display = 'block';"
+                        onmouseout="document.getElementById('m_nav1').style.display = 'none';">
+                        <a href="../教学实践/teaching_practice_basic.html">基础实验</a>&or;
+                        <ul id="m_nav1"  style="display:none;z-index: 2;position: absolute">
+                            <li ><a href="../教学实践/teaching_practice_content.html">实验课程内容</a></li>
+                            <li ><a href="../教学实践/实验指导书.doc">实验指导书</a></li>
+                            <li ><a href="../教学实践/标准实验报告.doc">标准实验报告</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--********子菜单十  sub10 **********************-->
+                <ul class="undis" id="sub10">
+                    <li><a href="../网络课堂/teaching_online.html">学堂概述</a></li>
+                    <li><a href="../网络课堂/teaching_online-exercise.html">习题解答</a></li>
+
+                    <li id="zinav_2" onMouseMove="document.getElementById('m_nav2').style.display = 'block';"
+                        onmouseout="document.getElementById('m_nav2').style.display = 'none';">
+                        <a href="#">课程资源</a>&or;
+                        <ul id="m_nav2" style="display: none;z-index: 2;position: absolute">
+                            <li><a href="../网络课堂/teaching_online_total.html">综合试题</a></li>
+                            <li><a href="../网络课堂/teaching_online_testpaper.html">考试样卷</a></li>
+                            <li><a href="../网络课堂/teaching_online_important.html">重点难点</a></li>
+                            <li><a href="../网络课堂/teaching_online_reference.html">参考文献</a></li>
+                            <li><a href="../电子教案.doc">电子教案</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../网络课堂/teaching_online_elec.html">电子课件</a></li>
+                    <li><a href="../网络课堂/teaching_online_work.html">作业提交与交流</a></li>
+                    <li><a href="../网络课堂/teaching_online_video.html">教学录像</a></li>
+                    <li><a href="../网络课堂/teaching_online_testself.html">在线自测</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="side">
+            <img src="../img/zimenu.png"/>
+            <p class="menu1">教学队伍</p>
+            <div class="sidemenu">
+                <ul>
+                    <li onMouseMove="document.getElementsByClassName('more')[0].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[0].style.color= '#666666';"><a   href="teaching_team.html">教学队伍概述<span  class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[1].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[1].style.color= '#666666';"><a href="teaching_team_structure.html">队伍结构与素质<span  class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[2].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[2].style.color= '#666666';"><a href="teaching_team_reform.html">教学改革与研究<span class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[3].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[3].style.color= '#666666';"><a href="teaching_team_principal.html">课程负责人<span class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[4].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[4].style.color= '#666666';"><a  style="color:maroon" href="teaching_team_baseinformation.html">主讲教师<span  style="color:maroon" class="more">></span></a></li>
+                </ul>
+            </div>
+            <p class="menu2">校内链接</p>
+            <div class="sidemenu">
+                <ul>
+                    <li onMouseMove="document.getElementsByClassName('more')[5].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[5].style.color= '#666666';"><a href="http://www.uestc.edu.cn/" target="_blank">电子科大<span  class="more">></span></a></li>
+                    <li onMouseMove="document.getElementsByClassName('more')[6].style.color= 'maroon';" onMouseOut="document.getElementsByClassName('more')[6].style.color= '#666666';"><a href="http://www.me.uestc.edu.cn/" target="_blank">微固学院<span class="more">></span></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <p class="p1"><span class="span1"><a href="#">主讲教师介绍</a></span><a href="../index.html">首页</a>/<a href="teaching_team.html">教学队伍</a>/<a href="teaching_team_baseinformation.html">主讲教师介绍</a></p>
+            <span class="span2">印刷电路原理和工艺主讲教师介绍</span><br/>
+            <p class="p3">张怀武</p>
+            <span class="title1">一、基本信息</span>
+                <img style="width:150px;" class="personimg" src="../img/team2.jpg"/>
+                <p class="p4">张怀武，博士、教授、博士生导师、院长，国家"长江学者计划"特聘教授，国家杰出青年基金获得者，全国优秀教师(2004年)，四川省学术和技术带头人。国家973重大基础项目首席科学家，曾留学韩国科学院和日本东北大学，长期以来在磁电信息材料与器件、磁性纳米材料芯片和微磁LTCC集成器件方向做出了许多创新性研发工作。承担和完成国家、部省级科研项目20余项，承担特大工程"代号XXX"项目两项的首席技术专家。承担过国家自然科学重大项目，重点项目和973、863项目，部省级鉴定和验收项目26项。</p>
+                <p class="p4">获国家科学技术进步二等奖一项、国家技术发明三等奖一项、国际科学工程一等荣誉奖一项、省部级科技进步一等奖四项、二等奖二项、三等奖五项。其它奖励5项，中国发明专利12项。在材料、元器件和系统结合开发的基础上，先后研发出实用型高频复合双性EMI材料和集成薄膜变压器系列产品，这些研究成果已经和正向多家企业转让。其中两项已获的较大效益（创造产值达3亿人民币以上）。在国内外刊物发表论文230余篇，SCI、收录143篇，EI收录132篇，多次被同行引用，著书两本。先后在美国Ansoft公司，意大利电工所，俄罗斯ELMA，乌克兰CARAT，韩国KIST，日本东北大学及我国台湾成功大学进行科研合作及学术交流。兼欧洲《Vacuum》编委，《磁电世界》及《磁性材料与器件》副主编与编委。国家教委电子科学与技术教学指导委员会委员，从1996年至今共指导硕士研究生38人，培养博12人，已毕业硕士研究生20余人，博士研究生10人。</p>
+            <p  class="click1" style="vertical-align:middle"><span>More</span></p>
+            <div class="none1">
+                <span class="title1">二、教学情况</span>
+                <span>1、近五年来教授的基本课程</span><br/>
+                <table id="table1" cellpadding="0" cellspacing="0" align="center">
+                <tr class="thead">
+                    <td>时间</td>
+                    <td>课程名称</td>
+                    <td>课程类别</td>
+                    <td>学时</td>
+                    <td>学生总人数</td>
+                </tr>
+                <tr>
+                    <td>200～2008</td>
+                    <td>新技术专题(印制电子方向)</td>
+                    <td>专业基础课</td>
+                    <td>8</td>
+                    <td>450</td>
+                </tr>
+                <tr>
+                    <td>2003</td>
+                    <td>自旋电子学、磁电子学与微磁器件设计与建模、信息材料基础</td>
+                    <td>专业课</td>
+                    <td>80</td>
+                    <td>150</td>
+                </tr>
+                    <tr>
+                        <td>2008～2009</td>
+                    <td>印制电路原理和工艺</td>
+                    <td>专业基础课</td>
+                    <td>16</td>
+                    <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>2004～2008</td>
+                    <td>试验设计方法</td>
+                    <td>专业基础课</td>
+                    <td>32</td>
+                    <td>180</td>
+                    </tr>
+                <tr>
+                    <td>200～2008</td>
+                    <td>电子材料</td>
+                    <td>专业基础课</td>
+                    <td>16</td>
+                    <td>320</td>
+                </tr>
+                <tr><td>200～2008</td>
+                    <td>信息材料基础</td>
+                    <td>基础课（硕、博）</td>
+                    <td>200</td>
+                    <td>300</td>
+                </tr>
+                </table>
+                <span>2、承担的实践性教学</span>
+                <table id="table2" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>实践教学名称</td>
+                        <td>内容</td></tr>
+                    <tr><td>本科毕业设计指导</td>
+                        <td>2003-2008年指导24名本科毕业设计</td></tr>
+                    <tr><td>指导毕业实习</td>
+                        <td>2005-2006年指导670本科生在绵阳开元实习</td></tr>
+                    <tr><td>研究生指导</td>
+                        <td>指导博士生（已毕业）：10人；指导硕士生（已毕业）：20人</td></tr>
+                </table>
+                <span>3、主持的教学研究课题</span>
+                <table id="table3" cellpadding="0" cellspacing="0" align="center">
+                <tr id="thead">
+                    <td>时间</td>
+                    <td>课题名称</td>
+                    <td>课题来源</td></tr>
+                <tr><td>2006</td>
+                    <td>现代印制电路原理与工艺，张怀武等</td>
+                    <td>机械工业出版社</td></tr>
+                <tr><td>2005</td>
+                    <td>自旋电子学，张怀武等</td>
+                    <td>电子科技大学出版社</td></tr>
+                <tr><td>2002</td>
+                    <td>电子信息薄膜，张怀武等</td>
+                    <td>科学出版社</td></tr>
+                <tr><td>2001</td>
+                    <td>抗电磁干扰材料及元器件工艺，张怀武等</td>
+                    <td>电子科技大学出版社</td></tr>
+                <tr><td>2006-2010</td>
+                    <td>教育部高校电子信息与电气学科教学指导委员会电子科学与技术专业教学指导分委员会委员</td>
+                    <td>--</td></tr>
+                </table>
+                <span>4、获得的教学表彰/奖励</span>
+                <table id="table4" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>奖项名称</td></tr>
+                    <tr><td>2004</td>
+                        <td>全国优秀教师</td></tr>
+                    <tr><td>2004</td>
+                        <td>四川省教学成果二等奖</td></tr>
+                    <tr><td>2008</td>
+                        <td>《电子材料》国家精品课程（课程主持人）</td></tr>
+                    <tr><td>2008</td>
+                        <td>电子科学与技术专业"三个链接"创新培养体系探索与实践（四川省教学成果一等奖，排名1）</td></tr>
+                </table>
+                <span class="title1">三、学术研究</span>
+                <span>1、学术研究课题</span>
+                <table id="table5" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>课题名称</td>
+                        <td>课题来源</td>
+                        <td>本人所起作用</td></tr>
+                    <tr>
+                    <td>2004-2007</td>
+                    <td>纳米结自旋晶体管</td>
+                    <td>国家自然基金重点</td>
+                    <td>负责人</td></tr>
+                    <tr>
+                    <td>2005～2008</td>
+                    <td>新型磁电材料与器件基础</td>
+                    <td>国家杰出青年基金</td>
+                    <td>负责人</td></tr>
+                    <tr>
+                    <td>2007～2012</td>
+                    <td>信息薄膜与集成器件</td>
+                    <td>国家自然科学基金委创新群体</td>
+                    <td>团队带头人</td></tr>
+                    <tr>
+                    <td>2005～2007</td>
+                    <td>信息薄膜与集成器件</td>
+                    <td>教育部长江学者创新团队</td>
+                    <td>负责人</td></tr>
+                    <tr>
+                    <td>2001～2006</td>
+                    <td>纳米MRAM材料芯片</td>
+                    <td>国防973重大基础项目</td>
+                    <td>负责人</td></tr>
+                    <tr>
+                    <td>2000～2008</td>
+                    <td>大尺寸单晶体YIG</td>
+                    <td>国防934基础工程项目</td>
+                    <td>负责人</td></tr>
+                    <tr>
+                    <td>1999～2008</td>
+                    <td>抗毁伤信息磁光盘</td>
+                    <td>国防934基础工程项目</td>
+                    <td>负责人</td></tr>
+                    <tr>
+                    <td>2007～2012</td>
+                    <td>THz重要辐射源、检测及应用研究</td>
+                    <td>国家973重大基础研究项目</td>
+                    <td>负责人</td></tr>
+                    <tr>
+                    <td>2000～2008</td>
+                    <td>"Ⅰ-{2000}-129"项目，120万美元+200万人民币</td>
+                    <td>单晶YIG材料技术及设备引进</td>
+                    <td>负责人</td></tr>
+                    <tr>
+                    <td>1999～2008</td>
+                    <td>"Ⅱ-[1999]-691工程"项目，310万美元+300万人民币</td>
+                    <td>抗毁伤信息材料技术</td>
+                    <td>负责人</td></tr>
+                    <tr>
+                    <td>2005.12完成</td>
+                    <td>多层软磁纳米晶薄膜材料</td>
+                    <td>国家自然基金重点</td>
+                    <td>负责人</td></tr>
+                    <tr>
+                    <td>2005～2010</td>
+                    <td>小型化高效电源技术</td>
+                    <td>总装备部</td>
+                    <td>负责人</td></tr>
+                    <tr>
+                    <td>2001-2006</td>
+                    <td>纳米电子薄膜</td>
+                    <td>国防973重大项目</td>
+                    <td>负责人</td></tr>
+                    <tr>
+                    <td>2004-2008</td>
+                    <td>纳米级光-磁混合非连续记录介质的制备和记录特性研究</td>
+                    <td>国家自然科学重点项目</td>
+                    <td>负责人</td></tr>
+                </table>
+                <span>2、发表的学术论文</span>
+                <p>近五年在国内外学术期刊和会议上共发表论文200余篇，其中SCI/EI收录234多篇，被SCI他人引用近200次。代表性论文：</p>
+                <table id="table6" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>论文题目</td>
+                        <td>刊物名称</td>
+                        <td>署名次序</td></tr>
+                    <tr><td>2006</td>
+                        <td>The Magnetoresistance and performance of amorphous- CoNbZr/ Co/Cu/Co magnetic multilayers</td>
+                        <td>J.Appl. Phys.</td>
+                        <td>2</td></tr>
+                    <tr><td>2006</td>
+                        <td>Structural, magnetic, and transport properties of (Zn, V)Te semiconductors</td>
+                        <td>J.Appl. Phys.</td>
+                        <td>3</td></tr>
+                    <tr><td>2005</td>
+                        <td>Electro-magnetic properties of a new ferrite-ceremic low temperature Co-Calcined composite materials</td>
+                        <td>IEEE Trans</td>
+                        <td>1</td></tr>
+                    <tr><td>2006</td>
+                        <td>Giant magnetoresistance, microsture and application characteristic of amorphous-CoNbZr base pseudo spin-valve</td>
+                        <td>IEEE trans. Magn.</td>
+                        <td>2</td></tr>
+                    <tr><td>2006</td>
+                        <td>Theoretical model of giant magnetoresistive sandwiches with polycrystalline and amorphous ferromagnetic layer</td>
+                        <td>Phys. Lett. A</td>
+                        <td>2</td></tr>
+                    <tr><td>2006</td>
+                        <td>Effects of calcining temperature and heating rate on properties of high-permeability NiCuZn ferrites.</td>
+                        <td>Journal of Magnetism and Magnetic Materials</td>
+                        <td>2</td></tr>
+                    <tr><td>2006</td>
+                        <td>Sintering Characteristics and Magnetic Properties of NiCuZn Ferrites for MLCI Applications</td>
+                        <td>Materials Science and Engineering B</td>
+                        <td>2</td></tr>
+                    <tr><td>2006</td>
+                        <td>Micromagnetic simulation of magnetictriangularly shaped nanoelement formed by nanosphere lithography</td>
+                        <td>IEEE Tran. Magn.</td>
+                        <td>2</td></tr>
+                    <tr><td>2006</td>
+                        <td>The Influence of the heat bath and structural disorder in protein molecules on soliton transported bio-energy in an improved model</td>
+                        <td>J. Phys.: Condens. Matter</td>
+                        <td>2</td></tr>
+                    <tr><td>2006</td>
+                        <td>Phase composing, microstructure and magnetic properties of Z-type hexaferrie Materials sintered at low-temperature</td>
+                        <td>IEEE International Magnetics conference</td>
+                        <td>2</td></tr>
+                    <tr><td>2006</td>
+                        <td>Temperature distribution effects on the magnetization switching in FePt single domain particles</td>
+                        <td>IEEE International Magnetics conference</td>
+                        <td>2</td></tr>
+                    <tr><td>2007</td>
+                        <td>Bi:YIG纳米薄膜的磁光特性</td>
+                        <td>硅酸盐学报</td>
+                        <td>2</td></tr>
+                    <tr><td>2007</td>
+                        <td>Room-temperature ferromagnetism of Co-Doped CeO2 thin films on Si(111) substrates</td>
+                        <td>Chin.Phys.Lett.</td>
+                        <td>2</td></tr>
+                    <tr><td>2007</td>
+                        <td>Defect-Bound carrier mediated room-temperature ferromagnetism in Co-Doped ZnO powders</td>
+                        <td>Chin.Phys.Lett.</td>
+                        <td>2</td></tr>
+                    <tr><td>2007</td>
+                        <td>High Q-factor NiCuZn ferrite with nanocrystalline ferrite particles and CO2O3 additives</td>
+                        <td>Phys. Stat. Sol. (A)</td>
+                        <td>2</td></tr>
+                    <tr><td>2007</td>
+                        <td>Effects of nanocrystalline ferrite particles on densification and magnetic properties of the NiCuZn ferrites</td>
+                        <td>J. Mater. Sci.</td>
+                        <td>2</td></tr>
+                    <tr><td>2007</td>
+                        <td>Effects of MoO3 and WO3 additives on densification and magnetic properies of highly permeable NiCuZn ferrites</td>
+                        <td>Mater. Chem. Phys.</td>
+                        <td>2</td></tr>
+                    <tr><td>2007</td>
+                        <td>Ehancement of structural and magnetic properties in spurrered half-metallic Fe3O4 films</td>
+                        <td>J. Vac. Sci. Technol. A</td>
+                        <td>2</td></tr>
+                    <tr><td>2007</td>
+                        <td>Huge exchange-coupling field observed in FeMn-pinned spin valve with ultra-thin pinned NiFe layer</td>
+                        <td>J. Magn. Magn. Mater.</td>
+                        <td>2</td></tr>
+                    <tr><td>2007</td>
+                        <td>Effect of different sintering temperature and Nb2O5 content on structural and magnetic properties of Z-type hexaferrites</td>
+                        <td>J. Magn. Magn. Mater.</td>
+                        <td>2</td></tr>
+                    <tr><td>2007</td>
+                        <td>Effects of composition and sintering temperature on properties of NiZn and NiCuZn ferrites</td>
+                        <td>J. Magn. Magn. Mater.</td>
+                        <td>2</td></tr>
+                    <tr><td>2007</td>
+                        <td>Effect of mixing procedure and Bi2O3 content on structural and magnetic properties of hexaferries sintered at low temperature</td>
+                        <td>J. Magn. Magn. Mater.</td>
+                        <td>2</td></tr>
+                    <tr><td>2007</td>
+                        <td>Effect of post-annealing on the magnetic properties of Bi:YIG film by RF magnetron sputtering on Si substrates</td>
+                        <td>IEEE T. Magn.</td>
+                        <td>2</td></tr>
+                    <tr><td>2007</td>
+                        <td>Effects of an underlayer on the sensitivity of top spin valves</td>
+                        <td>J. Appl. Phys.</td>
+                        <td>2</td></tr>
+                    <tr><td>2007</td>
+                        <td>Co doping effect on the magnetic properties of CeO2 films on Si(111) substrates</td>
+                        <td>J. Appl. Phys.</td>
+                        <td>2</td></tr>
+                    <tr><td>2007</td>
+                        <td>Changing and reversing the exchange bias in a current-in-plane spin valve by means of an electric current</td>
+                        <td>Appl. Phys. Lett.</td>
+                        <td>2</td></tr>
+                </table>
+                <span>3、学术表彰</span>
+                <table id="table7" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>2008</td>
+                        <td>低功耗铁氧体磁芯及新型节能磁性元器件</td>
+                        <td>国家技术发明奖二等奖</td>
+                        <td>1</td></tr>
+                    <tr>
+                    <td>2005</td>
+                    <td>纳米磁电子信息功能材料</td>
+                    <td>国家科技进步二等奖</td>
+                    <td>1</td></tr>
+                    <tr>
+                    <td>2004</td>
+                    <td>宽频双性抗电磁干扰材料</td>
+                    <td>省科技进步一等奖</td>
+                    <td>1</td></tr>
+                    <tr>
+                    <td>2001</td>
+                    <td>纳米晶巨磁光BiDYIG材料</td>
+                    <td>省科技进步一等奖</td>
+                    <td>1</td></tr>
+                    <tr>
+                    <td>2005</td>
+                    <td>一种高性能软磁膜状材料与旋磁薄膜材料的制备及其应用基础研究</td>
+                    <td>国防科技进步奖二等奖</td>
+                    <td>1</td></tr>
+                    <tr>
+                    <td>2006</td>
+                    <td>复合抗EMI（磁性－介电）电子材料及应用研究</td>
+                    <td>国家科技部</td>
+                    <td>1</td></tr>
+                    <tr>
+                    <td>2001</td>
+                    <td>纳米晶巨磁光BiDyIG材料及应用研究</td>
+                    <td>四川省教委科技进步一等奖</td>
+                    <td>1</td></tr>
+                    <tr>
+                    <td>2003</td>
+                    <td>复合抗EMI材料</td>
+                    <td>国防科技进步奖三等奖</td>
+                    <td>1</td></tr>
+                    <tr>
+                    <td>2006</td>
+                    <td>低线宽YIG单晶薄膜材料</td>
+                    <td>国防科技进步三等奖</td>
+                    <td>1</td></tr>
+                    <tr>
+                    <td>2002</td>
+                    <td>新型纳米晶软磁放大器及芯材工艺研究</td>
+                    <td>国防科技进步三等奖</td>
+                    <td>1</td></tr>
+                    <tr>
+                    <td>2006</td>
+                    <td>复合抗EMI材料及应用</td>
+                    <td>四川省科技进步三等奖</td>
+                    <td>1</td></tr>
+                    <tr>
+                    <td>2002</td>
+                    <td>纳米晶稀土永磁材料应用研究</td>
+                    <td>四川省科技进步三等奖</td>
+                    <td>1</td></tr>
+                    <tr>
+                    <td>2003</td>
+                    <td>高频大功率铁氧体材料及应用</td>
+                    <td>国防科学技术二等奖</td>
+                    <td>1</td></tr>
+                </table>
+            </div>
+            <p class="p3">胡文成</p>
+            <span class="title1">一、基本信息</span>
+            <img style="width:150px;" class="personimg" src="../img/team3.jpg"/>
+            <p class="p4">胡文成，男，教授，1967年3月出生。1991年毕业于四川大学，获硕士学位，现为中国电子学会高级会员。主要从事应用化学的教学、科研和人才培养工作。目前从事纳米粉体制备及性能研究、无机材料的合成、化合物半导体薄膜、高介电薄膜、多孔无机薄膜的制备与性能研究，承担国家973子课题、四川省科技攻关项目、成都市科技攻关项目、中国工程物理研究院院外基金等在研项目。已发表刊物论文40余篇，其中在国外重要刊物“Applied Physics Letters”、“Journal of Materials Science: Materials in Electrics”、“Journal of Sol-gel Science and Technology”、“Ceramics International”、“Ferroelectrics”、“Integrated Ferroelectrics”等上发表论文13篇，被SCI、Ei收录20余篇次。完成科研项目二项，著作两部，讲授“无机材料合成”、“物理化学”、“印制电路技术”等课程。</p>
+            <span>联系电话：028-83201171</span><br/>
+            <span>电子邮箱：huwc@uestc.edu.cn</span>
+            <p class="click2" style="vertical-align:middle"><span>More</span></p>
+            <div class="none2">
+                <span class="title1">二、教学情况</span><br/>
+                <span>1、近五年来讲授的主要课程</span>
+                <table id="table8" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>课程名称</td>
+                        <td>课程类别</td>
+                        <td>周学时</td>
+                        <td>学生总人数</td></tr>
+                    <tr><td>2004-2007</td>
+                        <td>印制电路原理和工艺</td>
+                        <td>专业课</td>
+                        <td>2</td>
+                        <td>180</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>物理化学</td>
+                        <td>学科基础课</td>
+                        <td>3</td>
+                        <td>180</td></tr>
+                    <tr><td>2004-2007</td>
+                        <td>印制电路原理和工艺（实验）</td>
+                        <td>专业课</td>
+                        <td>4</td>
+                        <td>180</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>无机材料合成</td>
+                        <td>专业课（硕、博）</td>
+                        <td>2</td>
+                        <td>100</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>印制电路新技术</td>
+                        <td>专业课（硕、博）</td>
+                        <td>4</td>
+                        <td>100</td></tr>
+                </table>
+                <span>2、承担的实践性教学</span>
+                <table id="table9" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>实践教学名称</td>
+                        <td>课程类别</td>
+                        <td>周学时</td>
+                        <td>学生总人数</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>物理化学实验</td>
+                        <td>专业基础课</td>
+                        <td>5</td>
+                        <td>155</td></tr>
+                    <tr><td>2004-2005</td>
+                        <td>物理化学创新实验</td>
+                        <td>专业基础课</td>
+                        <td>2</td>
+                        <td>61</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>指导本科生毕业设计</td>
+                        <td>……</td>
+                        <td>……</td>
+                        <td>20</td></tr>
+                </table>
+                <span>3、主持的教学研究课题</span>
+                <table id="table10" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>课题名称</td>
+                        <td>课题来源</td></tr>
+                    <tr><td>2003-2005</td>
+                        <td>物理化学创新实验</td>
+                        <td>学校</td></tr>
+                </table>
+                <span>4、获得的教学表彰/奖励</span>
+                <table id="table11" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>教学成果名称</td>
+                        <td>获奖等级</td>
+                        <td>本人所起作用</td></tr>
+                    <tr><td>2002</td>
+                        <td>"托普"最受学生欢迎基础课教学</td>
+                        <td>校级教学成果一等奖</td>
+                        <td>1</td></tr>
+                    <tr><td>2008</td>
+                        <td>《现代印制电路原理与工艺》</td>
+                        <td>校教学成果二等奖</td>
+                        <td>3</td></tr>
+                </table>
+                <span>5、发表的教学研究论文</span>
+                <table id="table12" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>论文题目</td>
+                        <td>刊物名称</td>
+                        <td>署名次序</td></tr>
+                    <tr><td>2007</td>
+                        <td>溶胶-凝胶法制备BST铁电薄膜的实验教学</td>
+                        <td>实验科学与技术</td>
+                        <td>1</td></tr>
+                    <tr><td>2007</td>
+                        <td>涉及多知识点的物理化学综合实验――化学镀铜实验</td>
+                        <td>中国科学教育</td>
+                        <td>1</td></tr>
+                </table>
+                <span>6、出版教材</span>
+                <table id="table13" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>作者</td>
+                        <td>教材名称</td>
+                        <td>出版社</td>
+                        <td>出版时间</td></tr>
+                    <tr><td>迟兰州、胡文成</td>
+                        <td>电子化学工艺</td>
+                        <td>电子科技大学出版社</td>
+                        <td>1996</td></tr>
+                    <tr><td>张怀武、何为、胡文成、唐先忠</td>
+                        <td>现代印制电路原理与工艺（面向21世纪教材）（入选国家"十一五"规划教材）</td>
+                        <td>机械工业出版社</td>
+                        <td>2006</td></tr>
+                </table>
+                <span class="title1">三、学术研究</span>
+                <span>1、学术研究课题</span>
+                <table id="table14" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>课题名称</td>
+                        <td>课题来源</td>
+                        <td>本人所起作用</td></tr>
+                    <tr><td>2003-2005</td>
+                        <td>热释电薄膜机理及性能研究</td>
+                        <td>省部级</td>
+                        <td>排名3</td></tr>
+                    <tr><td>2004-2006</td>
+                        <td>LTCC电极用金属铜粉的研究</td>
+                        <td>省部级</td>
+                        <td>排名1</td></tr>
+                    <tr><td>2006-2007</td>
+                        <td>硫化镉薄膜常压化学气相沉积</td>
+                        <td>横向</td>
+                        <td>排名1</td></tr>
+                    <tr><td>2007-2010</td>
+                        <td>磁电/半导体集成电子薄膜生长控制与调制机理研究--BST铁电薄膜性能研究部分</td>
+                        <td>国防973项目</td>
+                        <td>参研</td></tr>
+                </table>
+                <span>2、发表的学术论文</span>
+                <table id="table15" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>论文题目</td>
+                        <td>刊物名称</td>
+                        <td>署名次序</td></tr>
+                    <tr><td>2006</td>
+                        <td>The diffusion of Pt in BST films on Pt/Ti/SiO2/Si substrate by sol-gel method</td>
+                        <td>Journal of Sol-gel Science and Technology</td>
+                        <td>1</td></tr>
+                    <tr><td>2007</td>
+                        <td>Thermodynamic equilibrium model of pyroelectric polycrystalline thin films</td>
+                        <td>Applied Physics Letters</td>
+                        <td>1</td></tr>
+                    <tr><td>2007</td>
+                        <td>Characteristics of Ba0.8Sr0.2TiO3 ferroelectric thin films by RF magnetron sputtering</td>
+                        <td>Ceramics International</td>
+                        <td>1</td></tr>
+                    <tr><td>2007</td>
+                        <td>Thermal behavior of copper powder prepared by hydrothermal treatment</td>
+                        <td>Journal of Materials Science-Materials in Electronics</td>
+                        <td>1</td></tr>
+                    <tr><td>2007</td>
+                        <td>Fabrication and conductive characteristic of highly oriented LaNiO3 thin films</td>
+                        <td>Integrated Ferroelectrics</td>
+                        <td>1</td></tr>
+                    <tr><td>2008</td>
+                        <td>Characterization of Sn-doped BST thin films on LaNiO3-coated Si substrate</td>
+                        <td>Journal of Materials Science-Materials in Electronics</td>
+                        <td>1</td></tr>
+                    <tr><td>2008</td>
+                        <td>Fabrication and characteristics of La, Cd and Sn doped BST thin films by sol-gel method</td>
+                        <td>Journal of Materials Science-Materials in Electronics</td>
+                        <td>1</td></tr>
+                </table>
+            </div>
+            <p class="p3">张万里</p>
+            <span class="title1">一、基本信息</span>
+            <img style="width:150px;" class="personimg" src="../img/team4.jpg"/>
+            <p class="p4">张万里，男，教授， 1966年2月出生，重庆市铜梁人，IEEE会员、中国微米纳米技术学会高级会员。在电子科技大学先后获得应用化学学士、材料物理与化学硕士和材料学博士，主要从固体电子方向（电子材料与元器件）的本科教学、研究生培养和科学研究工作。2002年、2005年先后短期访问过俄罗斯莫斯科动力学院、圣彼得堡国立电工大学、乌克兰基辅大学和德国卡尔斯鲁厄研究中心。目前主要从事电子薄膜材料与器件等方面的研究。2000年至今主持完成了包括国家自然科学基金在内的科研项目8项，正开展国家级（973重大基础研究）、部省级、企业横向科研项目5项，在《J.Magn. Magn. Mater.》、《IEE Tran. Magn.》、《Chinese Phys. Lett.》、《功能材料》、《微波学报》、《金属学报》等刊物上发表学术论文30余篇，其中SCI收录15篇，获授权专利5项；讲授研究生课程《纳米材料与纳米结构》、《科技报告写作》及本科生课程《印制电路原理和工艺》，指导本科毕业设计20人，培养硕士研究生20人，协助指导博士研究生3人；获国家技术发明二等奖、国防科技进步三等奖、教育部提名国家技术发明一等奖各1项，并获得四川省高等学校优秀共产党员荣誉称号（2005年）。</p>
+            <span>联系电话：028-83204938</span><br/>
+            <span>电子邮箱：wlzhang@uestc.edu.cn</span>
+            <p class="click3" style="vertical-align:middle"><span>More</span></p>
+            <div class="none3">
+                <span class="title1">二、教学情况</span>
+                <span>1、近五年来讲授的主要课程</span>
+                <table id="table16" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>课程名称</td>
+                        <td>课程类别</td>
+                        <td>周学时</td>
+                        <td>学生总人数</td></tr>
+                    <tr><td>2005-2009</td>
+                        <td>印制电路原理和工艺</td>
+                        <td>专业基础课</td>
+                        <td>2</td>
+                        <td>140</td></tr>
+                    <tr><td>2005-2009</td>
+                        <td>纳米材料与纳米结构</td>
+                        <td>专业课（硕）</td>
+                        <td>4</td>
+                        <td>250</td></tr>
+                    <tr><td>2005-2009</td>
+                        <td>科技报告写作</td>
+                        <td>公共选修（硕）</td>
+                        <td>2</td>
+                        <td>700</td></tr>
+                    </table>
+                <span>2、承担的实践性教学</span>
+                <table id="table17" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>实践教学名称</td>
+                        <td>内容</td></tr>
+                    <tr><td>2005-2009</td>
+                        <td>本科毕业设计指导</td>
+                        <td>指导20名本科毕业设计</td></tr>
+                    <tr><td>2005-2009</td>
+                        <td>研究生指导</td>
+                        <td>硕士生（已毕业）：20人</td></tr>
+                </table>
+                <span>3、主持的教学研究课题</span>
+                <table id="table18" cellpadding="0" cellspacing="0" align="center">
+                <tr class="thead">
+                    <td>时间</td>
+                    <td>课题名称</td>
+                    <td>课题来源</td></tr>
+                <tr><td>2005</td>
+                    <td>参编《纳米电子材料与器件》（第5章，5万余字）</td>
+                    <td>电子工业出版社</td></tr>
+                </table>
+                <span class="title1">三、学术研究</span>
+                <span>1、学术研究课题</span>
+                <table id="table19" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>课题名称</td>
+                        <td>课题来源</td>
+                        <td>本人所起作用</td></tr>
+                    <tr><td>2003-2005</td>
+                        <td>高灵敏交换耦合磁效伸缩薄膜材料的研究</td>
+                        <td>国家自然科学基金</td>
+                        <td>负责人</td></tr>
+                    <tr><td>2004-2006</td>
+                        <td>微波射频微机械开关的研制</td>
+                        <td>重点实验室基金</td>
+                        <td>负责人</td></tr>
+                    <tr><td>2007-2010</td>
+                        <td>XXX电子薄膜生长控制与调制机理研究</td>
+                        <td>国防973</td>
+                        <td>课题负责人</td></tr>
+                    <tr><td>2006-2010</td>
+                        <td>非制冷红外探测用BST热释电薄膜材料研究</td>
+                        <td>预研</td>
+                        <td>负责人</td></tr>
+                    <tr><td>2006-2008</td>
+                        <td>NdFeN快淬永磁粉体及其温度特性研究</td>
+                        <td>省青年基金</td>
+                        <td>负责人</td></tr>
+                    <tr><td>2007-2008</td>
+                        <td>PMNT/BST铁电薄膜生长及128×1COMS读出电路研制</td>
+                        <td>横向</td>
+                        <td>负责人</td></tr>
+                </table>
+                <span>2、发表的学术论文</span>
+                <table id="table20" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>论文题目</td>
+                        <td>刊物名称</td>
+                        <td>署名次序</td></tr>
+                    <tr><td>2004</td>
+                        <td>Hydrogen embrittlement processes and Al/Al2O3 hydrogen resistance coatings of NdFeB magnets</td>
+                        <td>Journal of Rare Earths</td>
+                        <td>1</td></tr>
+                    <tr><td>2004</td>
+                        <td>Influence of rapid cycle annealing temperature on the properties of Tb-Fe magnetostrictive films</td>
+                        <td>J. Magn. Magn. Mater.</td>
+                        <td>1</td></tr>
+                    <tr><td>2005</td>
+                        <td>Magnetization reversal simulation of diamond-shaped NiFe nanofilm elements</td>
+                        <td>IEEE Trans. Magn.</td>
+                        <td>1</td></tr>
+                    <tr><td>2005</td>
+                        <td>TbFe2/a-Fe Nanocrystalline Exchange Coupling Magnetostrictive Films</td>
+                        <td>Materials Science Forum</td>
+                        <td>1</td></tr>
+                    <tr><td>2005</td>
+                        <td>Simulation of the magnetization reversal process of rectangle-shaped NiFe film elements under an orthogonal magnetic field</td>
+                        <td>Acta Metallurgica Sinica</td>
+                        <td>1</td></tr>
+                    <tr><td>2006</td>
+                        <td>磁性随机存储器中的电流磁场分布模型</td>
+                        <td>固体电子学进展</td>
+                        <td>1</td></tr>
+                    <tr><td>2008</td>
+                        <td>Stress impedance effects in flexible amorphous FeCoSiB magnetoelastic films</td>
+                        <td>J. Magn. Magn. Mater.</td>
+                        <td>1</td></tr>
+                </table>
+                <span>3、学术表彰</span>
+                <table id="table21" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>奖项名称</td>
+                        <td>授予单位</td>
+                        <td>署名次序</td></tr>
+                    <tr><td>2007</td>
+                        <td>纳米XXXX及其应用</td>
+                        <td>国家技术发明二等奖</td>
+                        <td>2</td></tr>
+                    <tr><td>2003</td>
+                        <td>小型化XXXX材料及应用</td>
+                        <td>国防科学技术奖三等</td>
+                        <td>1</td></tr>
+                    <tr><td>2005</td>
+                        <td>多元氧化物电子薄膜倒筒式溅射沉积技术</td>
+                        <td>教育部提名国家技术发明一等奖</td>
+                        <td>5</td></tr>
+                </table>
+            </div>
+            <p class="p3">王守绪</p>
+            <span class="title1">一、基本信息</span>
+            <img style="width:150px;margin-bottom: 15px;" class="personimg" src="../img/team5.gif"/>
+            <p class="p4">王守绪，副教授，1964年9月出生。1986年6月毕业于吉林大学化学系，1993年6月于四川大学获得硕士学位。主讲了近10门本科生和研究生课程，教学效果优良，获电子科技大学教学成果奖3项，获得电子科技大学"优秀青年教师"称号。
+                获得省部级科技进步二等奖三项。参与编写教材2部，参加翻译专著一部。申请国家发明专利5项。在国内外公开发表论文20余篇（其中，教学研究方面的论文13篇）。</p><br/><span>联系电话：83201171</span><br/>
+            <span>电子邮件：Wangsx@uestc.edu.cn</span>
+            <p class="click4" style="vertical-align:middle"><span>More</span></p>
+            <div class="none4">
+                <span class="title1" style="clear: both;">二、教学情况</span>
+                <span>1、近五年来讲授的主要课程</span>
+                <table id="table22" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>课程名称</td>
+                        <td>课程类别</td>
+                        <td>周学时</td>
+                        <td>学生总人数</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>无机化学</td>
+                        <td>专业基础课</td>
+                        <td>3</td>
+                        <td>300</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>纳米材料的设计与合成</td>
+                        <td>学科基础课</td>
+                        <td>3</td>
+                        <td>155</td></tr>
+                    <tr><td>2004-2006</td>
+                        <td>生物化学</td>
+                        <td>专业基础课</td>
+                        <td>6</td>
+                        <td>33</td></tr>
+                    <tr><td>2005-2007</td>
+                        <td>环境化学</td>
+                        <td>专业课</td>
+                        <td>2</td>
+                        <td>43</td></tr>
+                    <tr><td>2004-2005</td>
+                        <td>生物化学</td>
+                        <td>校素质公选课程</td>
+                        <td>4</td>
+                        <td>233</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>高等无机化学</td>
+                        <td>专业课基础（硕）</td>
+                        <td>4</td>
+                        <td>120</td></tr>
+                    <tr><td>2005-2005</td>
+                        <td>高等生物化学</td>
+                        <td>专业基础课程（硕）</td>
+                        <td>6</td>
+                        <td>4</td></tr>
+                    <tr><td>2008-2009</td>
+                        <td>大学化学</td>
+                        <td>专业基础</td>
+                        <td>4</td>
+                        <td>30</td></tr>
+                </table>
+                <span>2、承担的实践性教学</span>
+                <table id="table23" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>实践教学名称</td>
+                        <td>课程类别</td>
+                        <td>周学时</td>
+                        <td>学生总人数</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>无机化学实验</td>
+                        <td>专业基础课</td>
+                        <td>4</td>
+                        <td>155</td></tr>
+                    <tr><td>2006-2009</td>
+                        <td>印制电路原理和工艺（实验）</td>
+                        <td>专业基础课</td>
+                        <td>2</td>
+                        <td>120</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>跨专业实验课程</td>
+                        <td>校素质公选课</td>
+                        <td>4</td>
+                        <td>400</td></tr>
+                    <tr><td>2005－2005</td>
+                        <td>现代化学基础（实验）</td>
+                        <td>专业基础课</td>
+                        <td>4</td>
+                        <td>58</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>指导本科生毕业设计</td>
+                        <td>……</td>
+                        <td>……</td>
+                        <td>12</td></tr>
+                </table>
+                <span class="title1">三、学术研究</span>
+                <span>1、学术获奖</span>
+                <table id="table24" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>成果名称</td>
+                        <td>获奖等级</td>
+                        <td>本人所起作用</td></tr>
+                    <tr><td>2008</td>
+                        <td>2-6层FPC工业化制造关键技术</td>
+                        <td>四川省科技进步二等将</td>
+                        <td>排名5</td></tr>
+                    <tr><td>2008</td>
+                        <td>多层挠性印制电路板的关键技术研究及应用</td>
+                        <td>教育部科技进步二等奖</td>
+                        <td>排名3</td></tr>
+                    <tr><td>2008</td>
+                        <td>手机用分层多层挠性印制板（FPC）产业化</td>
+                        <td>广东省科技进步二等奖</td>
+                        <td>排名9</td></tr>
+                </table>
+                <span>2、近五年学术研究课题</span>
+                <table id="table25" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>课题名称</td>
+                        <td>课题来源</td>
+                        <td>本人所起作用</td></tr>
+                    <tr><td>2006-2007</td>
+                        <td>HDI挠性多层印制电路板的关键技术研究	</td>
+                        <td>横向</td>
+                        <td>排名2</td></tr>
+                    <tr><td>2007-2009</td>
+                        <td>多层刚挠结合印制板及材料</td>
+                        <td>粤港关键领域重点突破招标项目</td>
+                        <td>排名2</td></tr>
+                    <tr><td>2004-2006</td>
+                        <td>相变储能材料研究</td>
+                        <td>预研项目</td>
+                        <td>排名4</td></tr>
+                </table>
+                <span>3、发表的学术论文</span>
+                <table id="table26" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>论文题目</td>
+                        <td>刊物名称</td>
+                        <td>署名次序</td></tr>
+                    <tr><td>2007</td>
+                        <td>环氧树脂-磷酸氢二钠复合相变储能材料的制备与性能研究</td>
+                        <td>功能材料</td>
+                        <td>1</td></tr>
+                    <tr><td>2006</td>
+                        <td>有机溶剂纳米SiO2溶胶的制备和性能</td>
+                        <td>材料研究学报</td>
+                        <td>3</td></tr>
+                    <tr><td>2006</td>
+                        <td>特种Nafion溶液制备及其在PEMFC中的应用研究 </td>
+                        <td>电子科技大学学报</td>
+                        <td>1</td></tr>
+                    <tr><td>2006</td>
+                        <td>图形化技术在纳米器件制造中的应用研究进展</td>
+                        <td>材料导报</td>
+                        <td>1</td></tr>
+                    <tr><td>2006</td>
+                        <td>微分脉冲极谱法测定痕量铀</td>
+                        <td>冶金分析</td>
+                        <td>2</td></tr>
+                    <tr><td>2006</td>
+                        <td>纳米SiO2对铝电解电容器闪火电压的影响研究 </td>
+                        <td>电子元件与材料</td>
+                        <td>1</td></tr>
+                    <tr><td>2005</td>
+                        <td>行波管用钨铼合金中高含量铼的X射线荧光光谱测定</td>
+                        <td>光谱学与光谱分析</td>
+                        <td>2</td></tr>
+                    <tr><td>2000</td>
+                        <td>计算机技术在化学中的应用研究进展</td>
+                        <td>化学研究与应用</td>
+                        <td>1</td></tr>
+                    <tr><td>2000</td>
+                        <td>PEMFC膜电极制作工艺的研究</td>
+                        <td>电子科技大学学报</td>
+                        <td>2</td></tr>
+                    <tr><td>2000</td>
+                        <td>Sol-Gel法合成SrO-TiO2-SiO2:Eu3+,Bi3+发光材料</td>
+                        <td>电子科技大学学报</td>
+                        <td>1</td></tr>
+                </table>
+            </div>
+            <p class="p3">薛卫东</p>
+            <span class="title1">一、基本信息</span>
+            <img style="width:150px;margin-bottom: 15px;" class="personimg" src="../img/team6.jpg"/>
+            <p class="p4">薛卫东，男，教授，1963年8月生于江苏省无锡市。四川大学博士，电子科技大学博士后，曾留学日本广岛县立大学，四川省学术技术带头人后备人选，现为电子科技大学应用化学系教授。主要从事应用化学方面的教学、科研和人才培养工作。目前主要从事新能源相关材料、光催化材料等方面的研究。2003年至今主持了5项省级科研课题；参研了4项国家自然科学基金课题和一项国家973重大基础项目；公开发表科研论文30多篇，其中SCI收录12篇；申请专利2项；讲授研究生课程《高等物理化学》、《化学实验设计与研究》、《电化学原理与应用》，及本科生课程《物理化学》、《印制电路原理和工艺》和《材料物理》；培养硕士生15人。 2007年获校优秀课堂教学奖。指导本科生进行科研创新活动，2007年获第九届"挑战杯"四川省大学生自然科学类学术论文一等奖，第十届"挑战杯"全国三等奖。</p>
+            <span>联系电话：028-83201171</span><br/>
+            <span>电子邮箱：xuewd2008@163.com</span>
+            <p class="click5" style="vertical-align:middle"><span>More</span></p>
+            <div class="none5">
+                <span class="title1" style="clear: both;">二、教学情况</span>
+                <span>1、近五年来讲授的主要课程</span>
+                <table id="table27" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>课程名称</td>
+                        <td>课程类别</td>
+                        <td>周学时</td>
+                        <td>学生总人数</td></tr>
+                    <tr><td>2008-2009</td>
+                        <td>印制电路原理和工艺</td>
+                        <td>专业基础课</td>
+                        <td>3</td>
+                        <td>120</td></tr>
+                    <tr><td>2004-2008</td>
+                        <td>物理化学</td>
+                        <td>专业基础课</td>
+                        <td>4</td>
+                        <td>320</td></tr>
+                    <tr><td>2004-2007</td>
+                        <td>化学试验设计与研究</td>
+                        <td>专业基础课（硕）</td>
+                        <td>2</td>
+                        <td>60</td></tr>
+                    <tr><td>2004-2008</td>
+                        <td>高等物理化学</td>
+                        <td>专业课（硕）</td>
+                        <td>3</td>
+                        <td>62</td></tr>
+                    <tr><td>2008</td>
+                        <td>材料物理</td>
+                        <td>专业课</td>
+                        <td>3</td>
+                        <td>60</td></tr>
+                    <tr><td>2008</td>
+                        <td>印制电路原理和工艺</td>
+                        <td>专业课</td>
+                        <td>2</td>
+                        <td>60</td></tr>
+                    <tr><td>2009</td>
+                        <td>电化学原理与应用</td>
+                        <td>专业基础课（硕）</td>
+                        <td>3</td>
+                        <td>40</td></tr>
+                </table>
+                <span>2、承担的实践性教学</span>
+                <table id="table28" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>实践教学名称</td>
+                        <td>内容</td></tr>
+                    <tr><td>2004-2008</td>
+                        <td>本科毕业设计指导</td>
+                        <td>指导22名本科毕业设计</td></tr>
+                    <tr><td>2007-2008</td>
+                        <td>指导毕业实习</td>
+                        <td>指导46名本科生在成都、重庆实习</td></tr>
+                    <tr><td>2004-2008</td>
+                        <td>实验教授</td>
+                        <td>承担320人的物理化学实验</td></tr>
+                </table>
+                <span>3、主持的教学研究课题</span>
+                <table id="table29" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>课题名称</td>
+                        <td>课题来源</td></tr>
+                    <tr><td>2004-2006</td>
+                        <td>高中生化学竞赛培训机制的研究</td>
+                        <td>四川省软科学项目(04ZR025-087)</td></tr>
+                    <tr><td>2006-2007</td>
+                        <td>微机接口恒电位仪的研制</td>
+                        <td>校教学改革研究项目</td></tr>
+                    <tr><td>2007-2008</td>
+                        <td>交互仿真式物理化学实验课件设计</td>
+                        <td>校教学改革研究项目</td></tr>
+                </table>
+                <span>4、发表的教学类论文</span>
+                <table id="table30" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>论文题目</td>
+                        <td>刊物名称</td>
+                        <td>署名次序</td></tr>
+                    <tr><td>2007</td>
+                        <td>实施新课程后开展化学竞赛的几点思考</td>
+                        <td>化学教育</td>
+                        <td>2(联系人)</td></tr>
+                    <tr><td>2006</td>
+                        <td>高中化学实验中手持技术的应用</td>
+                        <td>教学与管理</td>
+                        <td>4(联系人)</td></tr>
+                    <tr><td>2005</td>
+                        <td>各层次化学奥林匹克竞赛大纲的对比研究</td>
+                        <td>化学教育</td>
+                        <td>3(联系人)</td></tr>
+                    <tr><td>2005</td>
+                        <td>化学竞赛实验试题的内容与特点</td>
+                        <td>化学教育</td>
+                        <td>2(联系人)</td></tr>
+                </table>
+                <span>5、获得的教学表彰/奖励</span>
+                <table id="table31" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>奖项名称</td></tr>
+                    <tr><td>2005</td>
+                        <td>《化学CAI设计》获四川省精品课程（排名第三）</td></tr>
+                    <tr><td>2006</td>
+                        <td>《物理化学》电子课件获校优胜奖（排名第一）</td></tr>
+                    <tr><td>2007</td>
+                        <td>校优秀课堂教学奖（排名第一）</td></tr>
+                </table>
+                <span class="title1">三、学术研究</span>
+                <span>1、学术研究课题</span>
+                <table id="table32" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>课题名称</td>
+                        <td>课题来源</td>
+                        <td>本人所起作用</td></tr>
+                    <tr><td>2005-2007</td>
+                        <td>环保型磷酸铁锂系列锂电池正极材料的研究</td>
+                        <td>四川省攻关课题</td>
+                        <td>负责人</td></tr>
+                    <tr><td>2009-2011</td>
+                        <td>磷酸铁锂正极材料产业化关键技术的研究</td>
+                        <td>四川省支撑项目</td>
+                        <td>负责人</td></tr>
+                    <tr><td>2003-2005</td>
+                        <td>激光MBE法生长纳米级BT薄膜的机理研究</td>
+                        <td>四川省应用基础项目</td>
+                        <td>负责人</td></tr>
+                    <tr><td>2008-2010</td>
+                        <td>TiO2光敏化剂的合成及其光电转化效应的研究</td>
+                        <td>四川省应用基础项目</td>
+                        <td>负责人</td></tr>
+                    <tr><td>2001-2003</td>
+                        <td>金属铀与超临界二氧化碳表面反应的机理</td>
+                        <td>国家自然科学基金</td>
+                        <td>主研</td></tr>
+                    <tr><td>2006</td>
+                        <td>结构型二茂铁高分子吸波材料的分子设计与合成</td>
+                        <td>国家自然科学基金</td>
+                        <td>主研</td></tr>
+                </table>
+                <span>2、发表的学术论文</span>
+                <table id="table33" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>论文题目</td>
+                        <td>刊物名称</td>
+                        <td>署名次序</td></tr>
+                    <tr><td>2003</td>
+                        <td>CUO基态分子热力学稳定性的研究</td>
+                        <td>物理学报</td>
+                        <td>1</td></tr>
+                    <tr><td>2005</td>
+                        <td>四方相BaTiO3铁电性的第一性原理研究</td>
+                        <td>物理学报</td>
+                        <td>1</td></tr>
+                    <tr><td>2005</td>
+                        <td>BaxSr1-xTiO3精细结构的第一性原理研究</td>
+                        <td>化学物理学报</td>
+                        <td>1</td></tr>
+                    <tr><td>2004</td>
+                        <td>Theoretical study of ZnO adsorption and bonding on Al2O3 (0001) surface</td>
+                        <td>Science in China Ser. G</td>
+                        <td>3</td></tr>
+                    <tr><td>2009</td>
+                        <td>8-羟基喹啉铁配合物对锐钛矿型TiO2(101)表面的敏化机理</td>
+                        <td>物理化学学报</td>
+                        <td>2</td></tr>
+                    <tr><td>2004</td>
+                        <td>ZnO在a-Al2O3（0001）表面吸附与成键的理论研究</td>
+                        <td>中国科学</td>
+                        <td>3</td></tr>
+                    <tr><td>2007</td>
+                        <td>First Principles Study on Mn-doped LiFePO4 as Cathode Material for Rechargeable Lithium Batteries</td>
+                        <td>J. atomic and molecular physics</td>
+                        <td>2</td></tr>
+                </table>
+            </div>
+            <p class="p3">唐先忠</p>
+            <span class="title1">一、基本信息</span>
+            <img style="width:150px; margin-bottom: 15px" class="personimg" src="../img/team8.jpg"/>
+            <p class="p4">唐先忠，教授/博导，1963年12月出生。主讲了6门本科生和研究生课程，教学效果优良，获电子科技大学教学成果奖3项。2002年主讲《有机化学》课程，获得电子科技大学"教学质量优秀主讲教师"称号。</p>
+                <p>近5年承担省部级科研项目10余项，通过鉴定、验收6项，其中"聚合物电极材料及其在电容器中的应用"分别获得国家科技进步二等奖和四川省科技进步一等奖；"聚乙撑二氧噻酚及其在片式固体电容器中的应用"获得教育部技术发明二等奖。发表学术论文20余篇，1项发明专利获得授权，出版教材2部。</p>
+            <span>联系电话：028-83201171</span><br/>
+            <span>电子邮箱：txzong@uestc.edu.cn</span>
+            <p class="click6" style="vertical-align:middle"><span>More</span></p>
+            <div class="none6">
+                <span class="title1" style="clear: both" >二、教学情况</span>
+                <span>1、近五年来讲授的主要课程</span>
+                <table id="table34" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>课程名称</td>
+                        <td>课程类别</td>
+                        <td>周学时</td>
+                        <td>学生总人数</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>有机化学</td>
+                        <td>学科基础课 </td>
+                        <td>6</td>
+                        <td>150</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>高等有机化学</td>
+                        <td>专业基础课（硕士生）</td>
+                        <td>4</td>
+                        <td>60</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>有机功能材料合成技术</td>
+                        <td>专业课（硕士生）</td>
+                        <td>2</td>
+                        <td>20</td></tr>
+                    <tr><td>2005-2008</td>
+                        <td>印制电路原理和工艺（实验）</td>
+                        <td>专业基础课</td>
+                        <td>2</td>
+                        <td>120</td></tr>
+                </table>
+                <span>2、承担的实践性教学</span>
+                <table id="table35" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>实践教学名称</td>
+                        <td>课程类别</td>
+                        <td>周学时</td>
+                        <td>学生总人数</td></tr>
+                    <tr><td>2004-2008</td>
+                        <td>有机化学实验</td>
+                        <td>学科基础课</td>
+                        <td>5</td>
+                        <td>150</td></tr>
+                    <tr><td>2004-2008</td>
+                        <td>指导本科生毕业设计</td>
+                        <td>……</td>
+                        <td>……</td>
+                        <td>20</td></tr>
+                </table>
+                <span>3、主持的教学研究课题</span>
+                <table id="table36" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>课题名称</td>
+                        <td>课题来源</td></tr>
+                    <tr><td>2003-2005</td>
+                        <td>应用化学专业培养方案的研究与实践</td>
+                        <td>学校</td></tr>
+                </table>
+                <span>4、获得的教学表彰/奖励</span>
+                <table id="table37" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>教学成果名称</td>
+                        <td>获奖等级</td>
+                        <td>本人所起作用</td></tr>
+                    <tr><td>2002</td>
+                        <td>"托普"最受学生欢迎基础课教学</td>
+                        <td>校级一等奖</td>
+                        <td>1</td></tr>
+                    <tr><td>2006</td>
+                        <td>《有机电子材料化学基础》</td>
+                        <td>校教学成果二等奖</td>
+                        <td>2</td></tr>
+                    <tr><td>2008</td>
+                        <td>《现代印制电路原理与工艺》</td>
+                        <td>校教学成果二等奖</td>
+                        <td>4</td></tr>
+                </table>
+                <span>5、发表的教学研究论文</span>
+                <table id="table38" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>论文题目</td>
+                        <td>刊物名称</td>
+                        <td>署名次序</td></tr>
+                    <tr><td>2006</td>
+                        <td>应用化学专业本科人才培养方案的研究与实践</td>
+                        <td>中国科学教育</td>
+                        <td>2</td></tr>
+                </table>
+                <span>6、出版教材</span>
+                <table id="table39" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>作者</td>
+                        <td>教材名称</td>
+                        <td>出版社</td>
+                        <td>出版时间</td></tr>
+                    <tr><td>蒋亚东、唐先忠</td>
+                        <td>有机电子材料化学基础</td>
+                        <td>电子科技大学出版社</td>
+                        <td>2002</td></tr>
+                    <tr><td>张怀武、何为、胡文成、唐先忠</td>
+                        <td>现代印制电路原理与工艺（面向21世纪教材）（入选国家"十一五"规划教材）</td>
+                        <td>机械工业出版社</td>
+                        <td>2006</td></tr>
+                </table>
+                <span class="title1" >三、学术研究</span>
+                <span>1、学术获奖</span>
+                <table id="table40" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>成果名称</td>
+                        <td>获奖等级</td>
+                        <td>作用</td></tr>
+                    <tr><td>2002</td>
+                        <td>新型有机电致发光材料</td>
+                        <td>四川省科技进步二等奖</td>
+                        <td>2</td></tr>
+                    <tr><td>2006</td>
+                        <td>聚乙撑二氧噻酚及其在片式固体电容器中的应用</td>
+                        <td>教育部技术发明二等奖</td>
+                        <td>2</td></tr>
+                    <tr><td>2006-2007</td>
+                        <td>聚合物电极材料及其在电容器中的应用</td>
+                        <td>四川省科技进步一等奖,
+                            国家科技进步二等奖</td>
+                        <td>3</td></tr>
+                </table>
+                <span>2、学术研究课题</span>
+                <table id="table41" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>课题名称</td>
+                        <td>课题来源</td>
+                        <td>本人所起作用</td></tr>
+                    <tr><td>2003-2005</td>
+                        <td>光敏聚酰亚胺介质材料</td>
+                        <td>省部级</td>
+                        <td>排名1</td></tr>
+                    <tr><td>2004-2006</td>
+                        <td>新型聚合物电致发光材料研究</td>
+                        <td>省部级</td>
+                        <td>排名1</td></tr>
+                    <tr><td>2007-2009</td>
+                        <td>聚对苯乙撑涂覆材料研究</td>
+                        <td>省部级</td>
+                        <td>排名1</td></tr>
+                </table>
+                <span>3、发表的学术论文</span>
+                <table id="table42" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>论文题目</td>
+                        <td>刊物名称</td>
+                        <td>署名次序</td></tr>
+                    <tr><td>2004</td>
+                        <td>含TPD结构单元电荷传输聚合物的合成及其在EL器件中的应用</td>
+                        <td>应用化学</td>
+                        <td>2</td></tr>
+                    <tr><td>2004</td>
+                        <td>含查尔酮结构的光敏性二胺合成</td>
+                        <td>应用化学</td>
+                        <td>2</td></tr>
+                    <tr><td>2005</td>
+                        <td>结构型光敏聚酰亚胺的制备及研究</td>
+                        <td>功能材料</td>
+                        <td>2</td></tr>
+                    <tr><td>2005</td>
+                        <td>新型光敏聚酰亚胺材料的制备研究</td>
+                        <td>功能材料</td>
+                        <td>2</td></tr>
+                    <tr><td>2007</td>
+                        <td>2-(对叔丁基-苯基)-苯并噻唑合铱的乙酰丙酮配合物的合成及性质</td>
+                        <td>分子科学学报</td>
+                        <td>2</td></tr>
+                    <tr><td>2008</td>
+                        <td>一种新型金属铱磷光材料的合成及性能研究</td>
+                        <td>材料导报</td>
+                        <td>2</td></tr>
+                </table>
+                <span>4、发表的学术论文</span>
+                <table id="table43" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>论文题目</td>
+                        <td>刊物名称</td>
+                        <td>署名次序</td></tr>
+                    <tr><td>2005</td>
+                        <td>In vitro release of protein from Poly (butylcyanoacrylate) nanocapsules with an aqueous core</td>
+                        <td>Colloid and polymer science</td>
+                        <td>3</td></tr>
+                    <tr><td>2005</td>
+                        <td>Synthesis and hydrolytic degradation of aliphatic polyesteramides branched by glycerol</td>
+                        <td>Polymer degradation and stability</td>
+                        <td>3</td></tr>
+                    <tr><td>2007</td>
+                        <td>Mechanical and thermal properties study of glass fiber reinforced polyarylene ether nitriles</td>
+                        <td>Materials Letters</td>
+                        <td>1</td></tr>
+                    <tr><td>2007</td>
+                        <td>8.Synthesis and thermal properties of the thermosetting resin based on cyano functionalized benzoxazine</td>
+                        <td>Polymer degradation and stability</td>
+                        <td>2</td></tr>
+                    <tr><td>2008</td>
+                        <td>7.Preparation and properties of polyarylene ether nitrites/multi-walled carbon nanotubes composites</td>
+                        <td>Materials Letters</td>
+                        <td>1</td></tr>
+                </table>
+            </div>
+            <p class="p3">李元勋</p>
+            <span class="title1">一、基本信息</span>
+            <img style="width:150px; margin-bottom: 15px" class="personimg" src="../img/team7.gif"/>
+            <p class="p4">李元勋，副教授，1979年6月出生。2004年1月毕业于电子科技大学应用化学专业，获硕士学位，2005年破格晋升讲师。2008年11月博士毕业于电子科技大学电子科学与技术（电子信息材料及元器件）专业，留校任职。申请国家发明专利4项（授权2项）。在国内外公开发表论文40余篇（其中，教学研究方面的论文3篇）。</p>
+            <span>联系电话：83201171</span><br/>
+            <span>电子邮件：liyuanxun@uestc.edu.cn</span>
+            <p class="click7" style="vertical-align:middle"><span>More</span></p>
+            <div class="none7">
+                <span class="title1" style="clear: both" >二、教学情况</span>
+                <span>1、近五年来讲授的主要课程</span>
+                <table id="table44" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>课程名称</td>
+                        <td>课程类别</td>
+                        <td>周学时</td>
+                        <td>学生总人数</td></tr>
+                    <tr><td>2004-2005</td>
+                        <td>有机化学</td>
+                        <td>专业基础课</td>
+                        <td>4</td>
+                        <td>120</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>精细化工</td>
+                        <td>学科基础课</td>
+                        <td>3</td>
+                        <td>155</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>发射发光材料</td>
+                        <td>专业课</td>
+                        <td>2</td>
+                        <td>50</td></tr>
+                    <tr><td>2006-2008</td>
+                        <td>印制电路原理和工艺</td>
+                        <td>专业基础课</td>
+                        <td>2</td>
+                        <td>90</td></tr>
+                </table>
+                <span>2、承担的实践性教学</span>
+                <table id="table45" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>实践教学名称</td>
+                        <td>课程类别</td>
+                        <td>周学时</td>
+                        <td>学生总人数</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>精细化工课程设计</td>
+                        <td>专业基础课</td>
+                        <td>8</td>
+                        <td>155</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>指导本科生毕业设计</td>
+                        <td>……</td>
+                        <td>……</td>
+                        <td>20</td></tr>
+                </table>
+                <span>3、发表的教学研究论文</span>
+                <table id="table46" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>论文题目</td>
+                        <td>刊物名称</td>
+                        <td>署名次序</td></tr>
+                    <tr><td>2006</td>
+                        <td>优化试验设计在精细化工课程设计中的应用</td>
+                        <td>太平洋学报</td>
+                        <td>1</td></tr>
+                    <tr><td>2003</td>
+                        <td>纳米二氧化锡制备与特性测试</td>
+                        <td>实验科学与技术</td>
+                        <td>1</td></tr>
+                    <tr><td>2006</td>
+                        <td>《精细化工》课程设计的探索与实践研究</td>
+                        <td>中国教育导刊</td>
+                        <td>1</td></tr>
+                </table>
+                <span class="title1">三、学术研究</span>
+                <span>1、近五年学术研究课题</span>
+                <table id="table47" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>课题名称</td>
+                        <td>课题来源</td>
+                        <td>本人所起作用</td></tr>
+                    <tr><td>2003-2009</td>
+                        <td>信息薄膜及LTCC集成器件</td>
+                        <td>省部级</td>
+                        <td>排名3</td></tr>
+                    <tr><td>2006-2009</td>
+                        <td>低温烧结旋磁基板材料</td>
+                        <td>省部级</td>
+                        <td>排名4</td></tr>
+                    <tr><td>2006-2009</td>
+                        <td>多元微波集成技术</td>
+                        <td>省部级</td>
+                        <td>排名3</td></tr>
+                    <tr><td>2006-2009</td>
+                        <td>基于LTCC技术的射频无源基础设计技术研究</td>
+                        <td>省部级</td>
+                        <td>排名2</td></tr>
+                </table>
+                <span>2、发表的学术论文</span>
+                <table id="table48" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>论文题目</td>
+                        <td>刊物名称</td>
+                        <td>署名次序</td></tr>
+                    <tr><td>2008</td>
+                        <td>Rod-shaped polyaniline-barium ferrite nanocomposite: preparation, characterization and properties</td>
+                        <td>Nanotechnolgy</td>
+                        <td>1</td></tr>
+                    <tr><td>2008</td>
+                        <td>The design and fabrication of RF band pass filter by LTCC technology</td>
+                        <td>IEEE</td>
+                        <td>1</td></tr>
+                    <tr><td>2008</td>
+                        <td>The sintering properties and interfacial investigation of barium ferrite and ceramic co-firing system for the application of LTCC Technology</td>
+                        <td>Journal of Applied Physics</td>
+                        <td>1</td></tr>
+                    <tr><td>2007</td>
+                        <td>Synthesis and electro-magnetic properties of polyaniline-barium ferrite nanocomposite</td>
+                        <td>Chinese Journal of Chemical Physics</td>
+                        <td>1</td></tr>
+                    <tr><td>2008</td>
+                        <td>Microwave absorbing properties of polyaniline-barium ferrite nanocomposite</td>
+                        <td>MRS International Materials Research Conference</td>
+                        <td>1</td></tr>
+                </table>
+            </div>
+            <p class="p3">唐斌</p>
+            <span class="title1">一、基本信息</span>
+            <img style="width:150px; margin-bottom: 15px" class="personimg" src="../img/team9.jpg"/>
+            <p class="p4">唐斌，男，副教授，贵州遵义人，1981年12月出生。1999年起就读于电子科技大学应用化学专业，2001年起辅修电子科技大学金融学双学位，2003年6月获工学学士和经济学学士学位，2008年6月电子科技大学材料学博士毕业，2008～至今， 电子科技大学微电子与固体电子学院工作。</p>
+            <p class="p4">主要研究工作涉及温度稳定型多层陶瓷电容器材料机理与设计；耐高温陶瓷电容机理研究；陶瓷粉料纳米掺杂剂的化学湿法工艺；BaCaZr低介/BaTi4中介/BaNdTi高介系列微波陶瓷介质材料；Ca-B-Si系LTCC基板材料；射频大功率多层瓷介电容器配方设计等。所在团队具有稳定的学术队伍、扎实的技术积累和良好的实验条件。参与总装预研项目及型谱项目。研制出具备我国自主知识产权的系列高性能X7R（含BX）、X8R特性及耐更高温度的多层陶瓷电容器陶瓷材料配方体系，陶瓷性能达到和超过GB/T 5596-200X和GJB 192A-98标准水平，达到American Ferro公司同类产品水平；近年在Journal Of Electronic Materials，Journal Of Materials Science-Materials In Electronics，中国科学E，材料研究学报，真空科学与技术等材料类刊物上以第一作者发表论文10余篇，其中SCI检索6次，EI检索10次；申请发明专利1项。</p>
+            <p class="click8" style="vertical-align:middle"><span>More</span></p>
+            <div class="none8">
+                <span class="title1"  >二、教学情况</span>
+                <span>1、近五年来讲授的主要课程</span>
+                <table id="table49" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>课程名称</td>
+                        <td>课程类别</td>
+                        <td>周学时</td>
+                        <td>学生总人数</td></tr>
+                    <tr><td>2006-2008</td>
+                        <td>AutoCAD设计制图</td>
+                        <td>专业课</td>
+                        <td>4</td>
+                        <td>32</td></tr>
+                    <tr><td>2008-2009</td>
+                        <td>试验设计方法</td>
+                        <td>专业基础课</td>
+                        <td>2</td>
+                        <td>60</td></tr>
+                </table>
+                <span>2、承担的实践性教学</span>
+                <table id="table50" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>类别</td>
+                        <td>届数</td>
+                        <td>总人数</td></tr>
+                    <tr><td>本科生毕业设计</td>
+                        <td>3</td>
+                        <td>6</td></tr>
+                    <tr><td>指导研究生</td>
+                        <td>2</td>
+                        <td>4</td></tr>
+                </table>
+                <span class="title1"  >三、学术研究</span>
+                <span>1、近五年学术研究课题</span>
+                <table id="table51" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>课题名称</td>
+                        <td>课题来源</td>
+                        <td>本人所起作用</td></tr>
+                    <tr><td>2006～2010</td>
+                        <td>新型电子陶瓷材料研究</td>
+                        <td>省部级</td>
+                        <td>排名3</td></tr>
+                    <tr><td>2006～2010</td>
+                        <td>低温共烧多层无源集成功能电路基板材料</td>
+                        <td>省部级</td>
+                        <td>排名4</td></tr>
+                </table>
+                <span>2、发表的学术论文</span>
+                <table id="table52" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>论文题目</td>
+                        <td>刊物名称</td>
+                        <td>署名次序</td></tr>
+                    <tr><td>2007</td>
+                        <td>Regression analysis for complex doping of X8R ceramics based on uniform design</td>
+                        <td>Journal of Electronic Materials</td>
+                        <td>1</td></tr>
+                    <tr><td>2007</td>
+                        <td>Doping effects of Mn2+ on the dielectric properties of glass-doped BaTiO3-based X8R materials</td>
+                        <td>Journal of Materials Science-Materials in Electronics</td>
+                        <td>1</td></tr>
+                    <tr><td>2008</td>
+                        <td>Influence of CaZrO3 on dielectric properties and microstructures of BaTiO3-based X8R ceramics</td>
+                        <td>Science in China Series E</td>
+                        <td>1</td></tr>
+                    <tr><td>2008</td>
+                        <td>Effect of Mn2+ doping on the temperature coefficient of capacitance of TiO2/SiO2-doped BaTiO3 ceramics</td>
+                        <td>Inorganic Materials</td>
+                        <td>1</td></tr>
+                    <tr><td>2008</td>
+                        <td>Microstructure and dielectric properties of BaTiO3-Nb2O5-Zn0.8Mg0.2TiO3 ternary system</td>
+                        <td>Ceramics - Silikaty</td>
+                        <td>1</td></tr>
+                    <tr><td>2008</td>
+                        <td>Influence of tetragonality and secondary phase on the Curie temperature for barium titanate ceramics</td>
+                        <td>Journal of Materials Science-Materials in Electronics</td>
+                        <td>1</td></tr>
+                </table>
+                </div>
+            <p class="p3">张敏</p>
+            <span class="title1">一、基本信息</span>
+            <img style="width:150px; margin-bottom: 15px" class="personimg" src="../img/team10.jpg"/>
+            <p class="p4">张敏，女，工程师，1977年毕业于四川大学化学系，先后担任《大学化学》、《无机化学实验》、《有机化学实验》、《分析化学实验》、《跨专业综合实验》、《印制电路原理和工艺（实验部份）》《纳米材料结构性能及应用》、等多门课程。公开发表教学学术论文多篇，目前主要从化学实验教学方面的工作。</p>
+            <span>联系电话：83201171</span><br/>
+            <span>电子邮箱：zhangm@uestc.edu.cn</span>
+            <p class="click9" style="vertical-align:middle"><span>More</span></p>
+            <div class="none9">
+                <span class="title1" style="clear:both" >二、教学情况</span>
+                <span>1、近五年来讲授的主要课程</span>
+                <table id="table53" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>实践教学名称</td>
+                        <td>课程类别</td>
+                        <td>周学时</td>
+                        <td>学生总人数</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>电子工艺化学课程设计</td>
+                        <td>专业基础课</td>
+                        <td>8</td>
+                        <td>180</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>印制电路原理和工艺（实验准备与指导）</td>
+                        <td>专业基础课</td>
+                        <td>4</td>
+                        <td>180</td></tr>
+                    <tr><td>2004-2009</td>
+                        <td>指导本科生毕业设计</td>
+                        <td>……</td>
+                        <td>……</td>
+                        <td>24</td></tr>
+                </table>
+                <span>2、发表的教学研究论文</span>
+                <table id="table54" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>论文题目</td>
+                        <td>刊物名称</td>
+                        <td>署名次序</td></tr>
+                    <tr><td>2006</td>
+                        <td>优化试验设计在精细化工课程设计中的应用</td>
+                        <td>太平洋学报</td>
+                        <td>3</td></tr>
+                    <tr><td>2006</td>
+                        <td>电子类工科学校开设化学课程设计的探索与实践</td>
+                        <td>中国教育导刊</td>
+                        <td>1</td></tr>
+                    <tr><td>2006</td>
+                        <td>《精细化工》课程设计的探索与实践研究</td>
+                        <td>中国教育导刊</td>
+                        <td>3</td></tr>
+                </table>
+                <span>3、出版讲义</span>
+                <table id="table55" cellpadding="0" cellspacing="0" align="center">
+                    <tr class="thead">
+                        <td>时间</td>
+                        <td>教材名称</td>
+                        <td>出版社</td>
+                        <td>出版时间</td></tr>
+                    <tr><td>2009年</td>
+                        <td>印制电路原理和工艺实验</td>
+                        <td>电子科技大学</td>
+                        <td>2009</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="clear: both;height:50px;"></div>
+<div class="footer">
+    <p class="p1">
+        <span>友情链接：</span>
+        <a href="http://www.uestc.edu.cn/">电子科技大学</a>&nbsp;&nbsp;&nbsp;
+        <a href="http://www.me.uestc.edu.cn/">电子科技大学微固学院</a>
+    </p>
+    <p class="p2">
+        Copyright&copy;2009-2010 电子科技大学微电子与固体电子学院 All Rights Reserved        蜀ICP备06006552号
+    </p>
+</div>
+</body>
+</html>
